@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Ирина Асфур](https://up.htmlacademy.ru/htmlcss/26/user/1171109).
-* Наставник: `Максим Кузнецов`(https://htmlacademy.ru/profile/maxkuznetsov).
+* Наставник: [Максим Кузнецов](https://htmlacademy.ru/profile/maxkuznetsov).
 
 ---
 

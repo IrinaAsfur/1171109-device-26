@@ -16,11 +16,11 @@
       </div>
 
       <div class="functional">
-        <ul>
-          <li><form action="#" method="get">
+        
+          <form action="#" method="get">
             <input id="search-1" type="search" name="search-1" placeholder="Поиск по сайту" />
-          </form></li>
-        </ul>
+          </form>
+       
         <ul>
           <li><a class="enter" href="#">Войти</a></li>
         </ul>
@@ -33,21 +33,18 @@
       </div>
 
       <nav class="main-navigation">
-        <div class="menu-nav">
-          <ul class="main-menu">
-              <li><a href="#">Каталог товаров</a>
-                <ul class="sub-menu">
-                  <li><a href="#">Виртуальная реальность</a></li>
-                  <li><a href="#">Моноподы для селфи</a></li>
-                  <li><a href="#">Экшн-камеры</a></li>
-                  <li><a href="#">Фитнес-браслеты</a></li>
-                  <li><a href="#">Умные часы</a></li>
-                  <li><a href="#">Квадрокоптеры</a></li>
-                </ul>
-              </li>
-          </ul>
-        </div>
-        <ul>
+        <ul class="main-menu">
+          <li class="menu-nav">
+            <a href="#">Каталог товаров</a>
+            <ul class="sub-menu">
+              <li><a href="#">Виртуальная реальность</a></li>
+              <li><a href="#">Моноподы для селфи</a></li>
+              <li><a href="#">Экшн-камеры</a></li>
+              <li><a href="#">Фитнес-браслеты</a></li>
+              <li><a href="#">Умные часы</a></li>
+              <li><a href="#">Квадрокоптеры</a></li>
+            </ul>
+          </li>
           <li><a class="delivery" href="#">Доставка</a></li>
           <li><a class="guarantee" href="#">Гарантия</a></li>
           <li><a class="contacts" href="#">Контакты</a></li>
@@ -57,6 +54,7 @@
     
     <main class="container">
       <h1 class="visually-hidden">Интернет-магазин цифровой техники DEVICE</h1>
+
       <section class="features">
         <h2 class="visually-hidden">Преимущества товаров</h2>
 
@@ -67,9 +65,9 @@
 
             <div class="slider-controls">
               <ul>
-                <li><label for="btn-1"></label></li>
-                <li><label for="btn-2"></label></li>
-                <li><label for="btn-3"></label></li>
+                <li><label for="btn-1"><span class="visually-hidden">Показать первый слайдер</span></label></li>
+                <li><label for="btn-2"><span class="visually-hidden">Показать второй слайдер</span></label></li>
+                <li><label for="btn-3"><span class="visually-hidden">Показать третий слайдер</span></label></li>
               </ul>
             </div>
 
@@ -85,27 +83,40 @@
                     <p>Самая длинная палка для селфи доступна в нашем магазине.
                     <br />Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
                     <a class="more-info" href="#">Подробнее</a>
-                    <ul>
-                      <li><p>8,5 м<br />Длина палки</p></li>
-                      <li><p>5 кг<br />Вес палки</p></li>
-                      <li><p>Карбон<br />Материал</p></li>
-                    </ul>
+                    <table class="table-1">
+                      <tr>
+                        <td>8,5 м</td>
+                        <td>5 кг</td>
+                        <td>Карбон</td>
+                      </tr>
+                      <tr>
+                        <td>Длина палки</td>
+                        <td>Вес палки</td>
+                        <td>Материал</td>
+                      </tr>
+                    </table>
                     </div>
                   </div>
+             
 
-                  <div class="slide">
+                <div class="slide">
                     <h2 class="visually-hidden">Умные фитнес-браслеты</h2>
                     <div class="slide-image">
                       <img src="https://d3qy582t7d8gpp.cloudfront.net/products/amazfit_bip_smartwatch_onyx_black_hero.png" width="???" height="???" alt="Фитнес-браслет" />
                     </div>
                     <div class="description">
-                    <p>Худеем<br /> правильно!</p>
-                    <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не<br /> пропускать занятия и соблюдать диету.</p>
-                    <a class="more-info" href="#">Подробнее</a>
-                    <ul>
-                      <li><p>48 часов<br />Без подзарядки</p></li>
-                    </ul>
-                    </div>
+                      <p>Худеем<br /> правильно!</p>
+                      <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не<br /> пропускать занятия и соблюдать диету.</p>
+                      <a class="more-info" href="#">Подробнее</a>
+                      <table class="table-1">
+                        <tr>
+                          <td>48 часов</td>
+                        </tr>
+                        <tr>
+                          <td>Без подзарядки</td>
+                        </tr>
+                      </table>
+                      </div>
                   </div>
 
                   <div class="slide">
@@ -114,13 +125,19 @@
                       <img src="https://omaharentalads.com/images/drone-clipart-no-background-5.png" width="???" height="???" alt="Квадрокоптер" />
                     </div>
                     <div class="description">
-                    <p>Порхай как бабочка,<br /> жаль как пчела!</p>
-                    <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным<br /> лазером, замаскированным под стандартную камеру.</p>
-                    <a class="more-info" href="#">Подробнее</a>
-                    <ul>
-                      <li><p>800 м<br />Дальность полета</p></li>
-                      <li><p>50 м<br />Радиус поражения</p></li>
-                    </ul>
+                      <p>Порхай как бабочка,<br /> жаль как пчела!</p>
+                      <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным<br /> лазером, замаскированным под стандартную камеру.</p>
+                      <a class="more-info" href="#">Подробнее</a>
+                      <table class="table-1">
+                        <tr>
+                          <td>800 м</td>
+                          <td>50 м</td>
+                        </tr>
+                        <tr>
+                          <td>Дальность полета</td>
+                          <td>Радиус поражения</td>
+                        </tr>
+                      </table>
                     </div>
                   </div>
               </div>
@@ -140,6 +157,7 @@
         </ul>
       </section>
 
+      <!-- слайды сделаю после того, как разберусь с первым, видимо -->
       <section class="shop-info">
           <h2 class="visually-hidden">Информация о доставке, гарантии и кредите</h2>
         <!-- Слайд "Доставка" -->
@@ -228,15 +246,9 @@
       </div>
 
       <div class="functional-2">
-        <ul>
-          <li><a class="enter-2" href="#">Войти</a></li>
-        </ul>
-        <ul>
-          <li><a class="compare-2" href="#">Сравнить</a></li>
-        </ul>
-        <ul>
-          <li><a class="basket-2" href="#">Корзина</a></li>
-        </ul>
+        <a class="enter-2" href="#">Войти</a>
+        <a class="compare-2" href="#">Сравнить</a>
+        <a class="basket-2" href="#">Корзина</a>
       </div>
 
       <p>Тел.: +7 (495) 495-95-95</p>

@@ -16,11 +16,11 @@
       </div>
 
       <div class="functional">
-        <ul>
-          <li><form action="#" method="get">
+        
+          <form action="#" method="get">
             <input id="search-1" type="search" name="search-1" placeholder="Поиск по сайту" />
-          </form></li>
-        </ul>
+          </form>
+        
         <ul>
           <li class="login-user"><a class="user" href="#">Валентин Петухов</a></li>
           <li><a class="logout" href="#">Выйти</a></li>
@@ -34,27 +34,24 @@
       </div>
 
       <nav class="main-navigation">
-        <div class="menu-nav">
           <ul class="main-menu">
-              <li><a href="#">Каталог товаров</a>
-                <ul class="sub-menu">
-                  <li><a href="#">Виртуальная реальность</a></li>
-                  <li><a href="#">Моноподы для селфи</a></li>
-                  <li><a href="#">Экшн-камеры</a></li>
-                  <li><a href="#">Фитнес-браслеты</a></li>
-                  <li><a href="#">Умные часы</a></li>
-                  <li><a href="#">Квадрокоптеры</a></li>
-                </ul>
-              </li>
+            <li class="menu-nav">
+              <a href="#">Каталог товаров</a>
+              <ul class="sub-menu">
+                <li><a href="#">Виртуальная реальность</a></li>
+                <li><a href="#">Моноподы для селфи</a></li>
+                <li><a href="#">Экшн-камеры</a></li>
+                <li><a href="#">Фитнес-браслеты</a></li>
+                <li><a href="#">Умные часы</a></li>
+                <li><a href="#">Квадрокоптеры</a></li>
+              </ul>
+            </li>
+            <li><a class="delivery" href="#">Доставка</a></li>
+            <li><a class="guarantee" href="#">Гарантия</a></li>
+            <li><a class="contacts" href="#">Контакты</a></li>
           </ul>
-        </div>
-        <ul>
-          <li><a class="delivery" href="#">Доставка</a></li>
-          <li><a class="guarantee" href="#">Гарантия</a></li>
-          <li><a class="contacts" href="#">Контакты</a></li>
-        </ul>
-      </nav>
-    </header>
+        </nav>
+      </header>
 
     <main class="catalog-list">
       <h1 class="visually-hidden">Каталог моноподов для селфи</h1>
@@ -68,11 +65,12 @@
       </div>
 
       <div class="filter-names">
-        <h2 class="visually-hidden">Фильтрация товаров</h2>
         <section class="name-filter">
+        <h2 class="visually-hidden">Фильтрация товаров</h2>
           <p>ФИЛЬТР:</p>
         </section>
         <section class="name-sorting">
+        <h2 class="visually-hidden">Фильтрация товаров по рейтингу</h2>
           <p>СОРТИРОВКА:</p>
           <ul class="sorting-list">
             <li><a class="sorting-price" href="#">По цене</a></li>
@@ -91,8 +89,8 @@
         <fieldset class="filter-counter">
           <legend>Стоимость</legend>
           <!-- с этим потом разберусь -->
-          <input type="range" name="pricecount" id="pricecount" min="0" max="9000" step="10" />
-          <input type="range" name="pricecount" id="pricecount" min="0" max="9000" step="10" />
+          <input type="range" name="pricecount" id="pricecount-1" min="0" max="9000" step="10" />
+          <input type="range" name="pricecount" id="pricecount-2" min="0" max="9000" step="10" />
           <!-- от 0 до 9000 -->
         </fieldset>
         
@@ -129,13 +127,13 @@
       <fieldset class="filter-bluetooth">
         <legend>Bluetooth</legend>
         <ul>
-          <li><label for="bt">
-          <input type="radio" name="bt" value="yes">
+          <li><label for="bt-yes">
+          <input type="radio" name="bt" value="yes" id="bt-yes">
           Есть
           </label>
           </li>
-          <li><label for="bt">
-          <input type="radio" name="bt" value="no">
+          <li><label for="bt-no">
+          <input type="radio" name="bt" value="no" id="bt-no">
           Нет
           </label>
           </li>
@@ -212,16 +210,9 @@
         </div>
 
         <div class="functional-2">
-          <ul>
-            <li class="login-user-2"><a class="user-2" href="#">Валентин Петухов</a></li>
-            <li><a class="logout-2" href="#">Выйти</a></li>
-          </ul>
-          <ul>
-              <li><a class="compare-2" href="#">Сравнить</a></li>
-            </ul>
-            <ul>
-              <li><a class="basket-2" href="#">Корзина</a></li>
-            </ul>
+          <a class="enter-2" href="#">Войти</a>
+          <a class="compare-2" href="#">Сравнить</a>
+          <a class="basket-2" href="#">Корзина</a>
         </div>
 
         <p>Тел.: +7 (495) 495-95-95</p>

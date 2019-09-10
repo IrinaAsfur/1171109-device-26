@@ -15,6 +15,10 @@ body {
     margin: -1px;
 }
 
+a {
+    text-decoration: none;
+}
+
 #enter::before {
     background-image: url("https://cdn.icon-icons.com/icons2/510/PNG/512/person_icon-icons.com_50075.png");
     background-repeat: no-repeat;
@@ -32,6 +36,48 @@ body {
 
     padding-left: 15px;
 }
+
+.main-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .main-menu > li {
+    position: relative;
+    display: inline-block;
+    margin-right: -4px;
+  }
+  
+  .main-menu a {
+    display: block;
+    margin-left: -1px;
+    padding: 8px 10px;
+    color: #0088cc;
+  }
+  
+  .main-menu a:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .main-menu .sub-menu {
+    position: absolute;
+    left: 1px;
+    display: none;
+    width: 150px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #fcf8e3;
+  }
+  
+  .main-menu .sub-menu a {
+    margin-bottom: -1px;
+  }
+  
+  .main-menu > li:hover .sub-menu {
+    display: block;
+  }
 
 .features {
     height: 350px;
@@ -237,7 +283,7 @@ section {
 }
   
 .paginator a,
-.paginator span {
+.paginator div {
     display: inline-block;
     min-width: 20px;
     height: 40px;
@@ -248,7 +294,7 @@ section {
     background-color: transparent;
     vertical-align: middle;
     font-weight: bold;
-    text-decoration: none;
+
     color: black;
   }
   

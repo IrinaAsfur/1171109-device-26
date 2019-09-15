@@ -74,23 +74,18 @@
         <section class="features">
           <h2 class="visually-hidden">Преимущества товаров</h2>
 
-          <input class="slider-input" id="btn-1" type="radio" name="slider-button" checked />
-          <input class="slider-input" id="btn-2" type="radio" name="slider-button" />
-          <input class="slider-input" id="btn-3" type="radio" name="slider-button" />
-
-          <div class="slider-controls">
-            <ul>
+            <ul class="slider-controls">
               <li class="slider-control">
-                <label for="btn-1" tabindex="0"><span class="visually-hidden">Показать первый слайдер</span></label>
+                <label for="btn-1" tabindex="0">Показать первый слайдер</label>
               </li>
               <li class="slider-control">
-                <label for="btn-2" tabindex="0"><span class="visually-hidden">Показать второй слайдер</span></label>
+                <label for="btn-2" tabindex="0">Показать второй слайдер</label>
               </li>
               <li class="slider-control">
-                <label for="btn-3" tabindex="0"><span class="visually-hidden">Показать третий слайдер</span></label>
+                <label for="btn-3" tabindex="0">Показать третий слайдер</label>
               </li>
             </ul>
-          </div>
+        
 
             <div class="slider-inner">
               <ul class="slider-slides">
@@ -98,6 +93,7 @@
                   <li class="slide">
                     <h3 class="visually-hidden">Самая длинная палка для селфи</h3>
                     <div class="content-list">
+                      <input class="slider-input visually-hidden" id="btn-1" type="radio" name="slider-button" checked />
                     <div class="slide-image">
                       <img src="img/index/slider-long-stick.png" width="384" height="486" alt="Самая длинная палка для селфи" />
                     </div>
@@ -126,6 +122,7 @@
               <li class="slide">
                 <h3 class="visually-hidden">Умные фитнес-браслеты</h3>
                 <div class="content-list">
+                  <input class="slider-input visually-hidden" id="btn-2" type="radio" name="slider-button" />
                     <div class="slide-image">
                       <img src="img/index/slider-smart-watch.png" width="345" height="485" alt="Умный фитнес-браслет" />
                     </div>
@@ -150,6 +147,7 @@
                   <li class="slide">
                     <h3 class="visually-hidden">Лазерный квадрокоптер</h3>
                   <div class="content-list">
+                    <input class="slider-input visually-hidden" id="btn-3" type="radio" name="slider-button" />
                     <div class="slide-image">
                       <img src="img/index/slider-quadrocopter.png" width="526" height="334" alt="Лазерный квадрокоптер" />
                     </div>
@@ -235,19 +233,22 @@
           <div class="shop-info">
             <section class="services">
               <h2 class="visually-hidden">Информация о доставке, гарантии и кредите</h2>
-      
-              <input class="services-input" id="btn-4" type="radio" name="services-button" checked />
-              <input class="services-input" id="btn-5" type="radio" name="services-button" />
-              <input class="services-input" id="btn-6" type="radio" name="services-button" />
 
               <ul class="button-list">
-                <li><label class="delivery-button" for="btn-4" tabindex="0"><span class="visually-hidden">Показать первый слайдер</span></label></li>
-                <li><label class="warranty-button" for="btn-5" tabindex="0"><span class="visually-hidden">Показать второй слайдер</span></label></li>
-                <li><label class="credit-button" for="btn-6" tabindex="0"><span class="visually-hidden">Показать третий слайдер</span></label></li>
+                <li>
+                  <label class="delivery-button" for="btn-4" tabindex="0">Показать первый слайдер</label>
+                </li>
+                <li>
+                  <label class="warranty-button" for="btn-5" tabindex="0">Показать второй слайдер</label>
+                </li>
+                <li>
+                  <label class="credit-button" for="btn-6" tabindex="0">Показать третий слайдер</label>
+                </li>
               </ul>
 
               <ul class="services-list">
                 <li class="services-list-item delivery-service shown">
+                  <input class="services-input visually-hidden" id="btn-4" type="radio" name="services-button" checked />
                   <div class="service-description">
                     <div class="service-description-case">
                       <h3>Доставка</h3>
@@ -262,6 +263,7 @@
                 </li>
           
                 <li class="services-list-item warranty-service hidden">
+                  <input class="services-input visually-hidden" id="btn-5" type="radio" name="services-button" />
                   <div class="service-description">
                     <div class="service-description-case">
                       <h3>Гарантия</h3>
@@ -276,6 +278,7 @@
                 </li>
        
                 <li class="services-list-item credit-service hidden">
+                  <input class="services-input visually-hidden" id="btn-6" type="radio" name="services-button" />
                   <div class="service-description">
                     <div class="service-description-case">
                       <h3>Кредит</h3>

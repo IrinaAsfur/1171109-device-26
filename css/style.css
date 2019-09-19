@@ -26,14 +26,13 @@
     font-weight: 300;
 }
 
-/* Как я поняла из демки - мы всегда приписываем Arial и sans-serif? */
 body {
-    font-family: "Gilroy", Arial, sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-size: 15px;
     line-height: 30px;
     font-weight: bold;
     text-transform: none;
-    letter-spacing: 0.001em;
+    letter-spacing: 0.016px;
     color: #464646;
   
     background-color: #ffffff;
@@ -61,7 +60,7 @@ img {
 }
 
 .current-user {
-    letter-spacing: 0.02em;
+    letter-spacing: 0.32px;
 }
 
 .user::before {
@@ -72,7 +71,7 @@ img {
 
 .authorization a,
 .operations a {
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: "Open Sans", "Aria", sans-serif;
     font-weight: 300;
     color: #000000;
 }
@@ -90,8 +89,11 @@ img {
 }
 
 .authorization a:hover,
+.authorization a:focus {
+    opacity: 0.6;
+}
+
 .operations a:hover,
-.authorization a:focus,
 .operations a:focus {
     opacity: 0.6;
 }
@@ -103,7 +105,7 @@ img {
 
 .main-navigation {
     text-transform: uppercase;
-    letter-spacing: 0.25em;
+    letter-spacing: 4px;
 }
 
 .main-navigation a {
@@ -139,12 +141,12 @@ img {
 }
 
 .catalog-item a {
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-size: 15px;
     line-height: 36px;
     font-weight: 300;
     text-transform: none;
-    letter-spacing: 0.001em;
+    letter-spacing: 0.016px;
 }
 
 .about-us-headline,
@@ -163,7 +165,7 @@ img {
 
 .about-us p,
 .contacts-details p {
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 300;
 }
 
@@ -192,7 +194,7 @@ img {
 }
 
 .catalog-page .header-logout {
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 300;
     color: rgba(0, 0, 0, 0.6);
 }
@@ -203,7 +205,7 @@ img {
 }
 
 .header .search-field {
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 300;
 }
   
@@ -218,7 +220,7 @@ img {
 }
   
 .header .search-button {
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     text-align: center;
     font-weight: 300;
     vertical-align: middle;
@@ -251,7 +253,7 @@ img {
   
 .footer-authorization a,
 .footer-operations a {
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 300;
     line-height: 30px;
     color: rgba(255, 255, 255, 0.7);
@@ -268,16 +270,22 @@ img {
 }
   
 .footer-authorization a:hover,
-.footer-authorization a:focus,
+.footer-authorization a:focus {
+    color: #ffffff;
+}
+
 .footer-operations a:hover,
 .footer-operations a:focus {
     color: #ffffff;
 }
   
 .footer-authorization a:hover svg,
-.footer-authorization a:focus svg,
+.footer-authorization a:focus svg {
+    opacity: 0.6;
+}
+
 .footer-operations a:hover svg,
-.footer-operations a:focus svg{
+.footer-operations a:focus svg {
     opacity: 0.6;
 }
   
@@ -296,7 +304,7 @@ img {
 }
   
 .catalog-page .footer-logout {
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 300;
     line-height: 30px;
     color: rgba(255, 255, 255, 0.3);
@@ -312,7 +320,7 @@ img {
 }
   
 .address {
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 300;
     letter-spacing: 0;
     color: #ffffff;
@@ -325,7 +333,7 @@ img {
 .footer-navigation a {
     font-size: 18px;
     line-height: 24px;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.32px;
     text-transform: uppercase;
     color: #ffffff;  
 }
@@ -341,7 +349,7 @@ img {
   
 .phone-number,
 .call {
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 300;
     letter-spacing: 0;
     color: #ffffff;
@@ -400,11 +408,11 @@ img {
 }
 
 .button {
-    font-family: "Gilroy", Arial, sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-size: 18px;
     font-weight: bold;
     line-height: 24px;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.32px;
     text-transform: uppercase;
     text-align: center;
     vertical-align: middle;
@@ -429,7 +437,7 @@ img {
 .catalog-page .headline {
     font-size: 47px;
     line-height: 48px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.16px;
     color: #000000;
 }
   
@@ -449,11 +457,11 @@ img {
   
 .breadcrumbs,
 .breadcrumbs a {
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-size: 14px;
     font-weight: 300;
     line-height: 24px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.16px;
     color: rgba(0, 0, 0, 0.3);
 }
   
@@ -483,7 +491,7 @@ img {
 }
   
 .filters li {
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-size: 14px;
     font-weight: 300;
     line-height: 40px;
@@ -580,17 +588,17 @@ img {
 .new-product .stick::after {
     content: "NEW";
   
-    font-family: "Gilroy", Arial, sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-size: 14px;
     font-weight: 700;
     line-height: 24px;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.8px;
   
     opacity: 0.2;
 }
 
 .mask .to-compare {
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-size: 13px;
     font-weight: 300;
     line-height: 36px;
@@ -620,7 +628,7 @@ img {
 }
 
 .stick h3 {
-    letter-spacing: 0.001em;
+    letter-spacing: 0.016px;
 }
 
 .filters {
@@ -632,18 +640,18 @@ img {
 }
 
 .modal-feedback {
-    font-family: "Gilroy", Arial, sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.32px;
     color: #000000;
 
     background-color: #ffffff;
 }
 
 .feedback-form-input {
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
@@ -669,7 +677,7 @@ img {
 }
   
 .modal-feedback .feedback-text {
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
@@ -716,14 +724,14 @@ img {
 }
   
 .slide::before {
-    counter-increment: product-number;
-    content: "0" counter(product-number);
+    counter-increment: slide;
+    content: "0" counter(slide);
   
-    font-family: "Gilroy", Arial, sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 700;
     font-size: 179.2px;
     line-height: 179.2px;  
-    letter-spacing: 0.001em;
+    letter-spacing: 0.016px;
     text-align: right;
     color: #ffffff;
 }
@@ -733,20 +741,20 @@ img {
 }
   
 .item-promo {
-    font-family: "Gilroy", Arial, sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 700;
     font-size: 47px;
     line-height: 56px;
-    letter-spacing: 0.02em; 
+    letter-spacing: 0.32px; 
     color: #000000;
 }
   
 .item-info {  
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 300;
     font-size: 15px;
     line-height: 30px;
-    letter-spacing: 0.01em; 
+    letter-spacing: 0.16px; 
     color: #464646;
 }
   
@@ -755,20 +763,20 @@ img {
 }
   
 .variety {
-    font-family: "Gilroy", Arial, sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 300;
     font-size: 36px;
     line-height: 48px;
-    letter-spacing: 0.001em; 
+    letter-spacing: 0.016px; 
     color: #000000;
 }
   
 .item-description {
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 300;
     font-size: 13px;
     line-height: 20px;
-    letter-spacing: 0.001em;
+    letter-spacing: 0.016px;
     color: #464646;
 }
 
@@ -816,11 +824,11 @@ img {
 }
   
 .categories-list .category-description {
-    font-family: "Gilroy", Arial, sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.16px;
     color: #000000;
 }
   
@@ -849,20 +857,20 @@ img {
 }
 
 .service-text {
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 300;
     font-size: 15px;
     line-height: 30px;
-    letter-spacing: 0.015em;
+    letter-spacing: 0.24px;
     color: #464646;
 }
   
 .service-description h3 {
-    font-family: "Gilroy", Arial, sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 700;
     font-size: 47px;
     line-height: 48px;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.32px;
     color: #000000;
 }
   
@@ -931,21 +939,21 @@ img {
 }
   
 .filter-headline {
-    font-family: "Gilroy", Arial, sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: 0.255em;
+    letter-spacing: 4.08px;
     text-transform: uppercase;
     color: #000000;
 }
   
 .sorting-headline {
-    font-family: "Gilroy", Arial, sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: 0.22em;
+    letter-spacing: 3.52px;
     text-transform: uppercase;
     color: #000000;
 }
@@ -955,7 +963,7 @@ img {
 }
   
 .sorting-type {
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
@@ -1022,7 +1030,6 @@ img {
     opacity: 1;
 }
 
-
 .pagination {
     background-color: #ebebeb;
   
@@ -1047,11 +1054,11 @@ img {
   }
   
   .page > a {
-    font-family: "Gilroy", Arial, sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: 0.2em;
+    letter-spacing: 3.2px;
     color: #000000;
   }
   
@@ -1073,11 +1080,11 @@ img {
   }
   
   .pagination-button {
-    font-family: "Gilroy", Arial, sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: 0.2em;
+    letter-spacing: 3.2px;
     text-align: center;
     vertical-align: middle;
     text-transform: uppercase;

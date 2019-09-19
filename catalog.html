@@ -95,27 +95,36 @@
             <h2 class="filter-headline">ФИЛЬТР:</h2>
           </div>
 
+      <form action="https://echo.htmlacademy.ru" method="get">
         <section class="sorting">
           <h2 class="sorting-headline">СОРТИРОВКА:</h2>
           <ul class="sorting-list">
-            <li><a class="sorting-type sorting-price sorting-selected" href="#">По цене</a></li>
-            <li><a class="sorting-type sorting-kind" href="#">По типу</a></li>
-            <li><a class="sorting-type sorting-rating" href="#">По популярности</a></li>
+            <li>
+              <input class="sorting-type sorting-price sorting-selected" type="radio" name="sort" value="by-price" id="sort-price" />
+              <label for="sort-price">По цене</label>
+            </li>
+            <li>
+              <input class="sorting-type sorting-kind" type="radio" name="sort" value="by-kind" id="sort-kind" />
+              <label for="sort-kind">По типу</label>
+            </li>
+            <li>
+              <input class="sorting-type sorting-rating" type="radio" name="sort" value="by-rating" id="sort-rating" />
+              <label for="sort-rating">По типу</label>
+            </li>
           </ul>
 
           <ul class="sorting-graduation">
             <li>
-              <button class="sorting-up sorting-button" type="button">
-                <span class="visually-hidden">Сортировка по возрастанию</span>
-              </button>
+              <input class="sorting-up sorting-button" type="radio" name="graduation" value="low-to-high" id="low-to-high" />
+              <label class="visually-hidden" for="low-to-high">Сортировка по возрастанию</label>
             </li>
             <li>
-              <button class="sorting-down sorting-button sorting-selected" type="button">
-                <span class="visually-hidden">Сортировка по убыванию</span>
-              </button>
+              <input class="sorting-down sorting-button sorting-selected" type="radio" name="graduation" value="high-to-low" id="high-to-low" />
+              <label class="visually-hidden" for="high-to-low">Сортировка по убыванию</label>
             </li>
           </ul>
         </section>
+      </form>
       </div> 
     </div>
       

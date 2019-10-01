@@ -11,7 +11,7 @@
   </head>
 
   <body>
-    <div class="header-container">
+    <div class="content">
     <header class="header">
       <div class="logo-header">
         <a class="logo header-logo" href="#">
@@ -30,8 +30,8 @@
       </div>
 
       <div class="functional">
-          <form action="#" method="get">
-            <label class="visually-hidden" for="search-1">Поиск по сайту</label>
+          <form class="search" action="#" method="get">
+            <label class="visually-hidden visually-hidden-ie11" for="search-1">Поиск по сайту</label>
             <input class="search-field" id="search-1" type="search" name="search-1" placeholder="Поиск по сайту" />
             <button class="search-button" type="submit">Найти</button>
           </form>
@@ -57,7 +57,7 @@
               <li class="catalog-item"><a href="#">Экшн-камеры</a></li>
               <li class="catalog-item"><a href="#">Фитнес-браслеты</a></li>
               <li class="catalog-item"><a href="#">Умные часы</a></li>
-              <li class="catalog-item"><a href="#">Квадрокоптеры</a></li>
+              <li class="catalog-item quadrocopters"><a href="#">Квадрокоптеры</a></li>
             </ul>
           </div>
           </li>
@@ -102,7 +102,7 @@
                       <img src="img/index/slider-long-stick.png" width="384" height="486" alt="Самая длинная палка для селфи" />
                     </div>
                     <div class="slide-description">
-                      <p class="item-promo">Делай селфи, как Бен Стиллер!</p>
+                      <p class="item-promo">Делай селфи, как&nbsp;Бен&nbsp;Стиллер!</p>
                       <p class="item-info">
                         Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
                       </p>
@@ -131,9 +131,9 @@
                       <img src="img/index/slider-smart-watch.png" width="345" height="485" alt="Умный фитнес-браслет" />
                     </div>
                     <div class="slide-description">
-                      <p class="item-promo">Худеем правильно!</p>
+                      <p class="item-promo">Худеем &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; правильно!</p>
                       <p class="item-info">
-                        Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
+                        Мотивирующие фитнес-браслеты помогут найти в себе силы не&nbsp;пропускать занятия и соблюдать диету.
                       </p>
                       <table class="item-factors">
                         <tr class="variety">
@@ -158,7 +158,7 @@
                     <div class="slide-description">
                       <p class="item-promo">Порхай как бабочка, жаль как пчела!</p>
                       <p class="item-info">
-                        Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+                        Этот обычный, на первый взгляд, квадрокоптер оснащен мощным&nbsp;лазером, замаскированным под стандартную камеру.
                       </p>
                       <table class="item-factors">
                         <tr class="variety">
@@ -193,9 +193,9 @@
           <li>
             <a class="category-link" href="catalog.html">
               <div class="category-item">
-                <img class="category-image" src="img/index/category-monopods.svg" width="86" height="117" alt="Категория товаров Моноподы для селфи" />
+                <img class="category-image bottom-align" src="img/index/category-monopods.svg" width="86" height="117" alt="Категория товаров Моноподы для селфи" />
               </div>
-              <h3 class="category-description">Моноподы для селфи</h3>
+              <h3 class="category-description">Моноподы для&nbsp;селфи</h3>
             </a>
           </li>
           <li>
@@ -235,25 +235,25 @@
       </div>
 
       <div class="service-section">
-          <div class="shop-info">
+          <div class="content">
             <section class="services">
               <h2 class="visually-hidden">Информация о доставке, гарантии и кредите</h2>
 
               <ul class="button-list">
                 <li>
-                  <label class="delivery-button button service-button" for="btn-4" tabindex="0">Доставка</label>
+                  <label class="button service-button service-button-active" for="btn-delivery" tabindex="0">Доставка</label>
                 </li>
                 <li>
-                  <label class="warranty-button button service-button" for="btn-5" tabindex="0">Гарантия</label>
+                  <label class="button service-button" for="btn-warranty" tabindex="0">Гарантия</label>
                 </li>
                 <li>
-                  <label class="credit-button button service-button" for="btn-6" tabindex="0">Кредит</label>
+                  <label class="button service-button" for="btn-credit" tabindex="0">Кредит</label>
                 </li>
               </ul>
 
               <ul class="services-list">
-                <li class="services-list-item delivery-service shown">
-                  <input class="services-input visually-hidden" id="btn-4" type="radio" name="services-button" checked />
+                <li class="services-list-item delivery-service hiding-class shown">
+                  <input class="services-input visually-hidden" id="btn-delivery" type="radio" name="services-button" checked />
                   <div class="service-description">
                     <div class="service-description-case">
                       <h3>Доставка</h3>
@@ -262,37 +262,37 @@
                       </p>
                     </div>
                     <div class="service-image">
-                      <img src="img/index/delivery.svg" width="136" height="164" alt="Доставка" />
+                      <img class="service-icon delivery-icon" src="img/index/delivery.svg" width="136" height="164" alt="Доставка" />
                     </div>
                   </div>
                 </li>
           
-                <li class="services-list-item warranty-service hidden">
-                  <input class="services-input visually-hidden" id="btn-5" type="radio" name="services-button" />
+                <li class="services-list-item warranty-service hiding-class hidden">
+                  <input class="services-input visually-hidden" id="btn-warranty" type="radio" name="services-button" />
                   <div class="service-description">
                     <div class="service-description-case">
                       <h3>Гарантия</h3>
                       <p class="service-text">
-                        Если из-за возгорания купленного у нас товара у вас сгорит дом &mdash; не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
+                        Если из-за возгорания купленного у нас товара у вас сгорит дом &mdash; не переживайте, мы выдадим вам новый. Товар,&nbsp;не&nbsp;дом, конечно же.
                       </p>
                     </div>
                     <div class="service-image">
-                      <img src="img/index/warranty.svg" width="171" height="194" alt="Гарантия" />
+                      <img class="service-icon warranty-icon" src="img/index/warranty.svg" width="171" height="194" alt="Гарантия" />
                     </div>
                   </div>
                 </li>
        
-                <li class="services-list-item credit-service hidden">
-                  <input class="services-input visually-hidden" id="btn-6" type="radio" name="services-button" />
+                <li class="services-list-item credit-service hiding-class hidden">
+                  <input class="services-input visually-hidden" id="btn-credit" type="radio" name="services-button" />
                   <div class="service-description">
                     <div class="service-description-case">
                       <h3>Кредит</h3>
                       <p class="service-text">
-                        Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
+                        Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия&nbsp;кредита. Выгодные для нашего банка, разумеется.
                       </p>
                     </div>
                     <div class="service-image">
-                      <img src="img/index/credit.svg" width="156" height="186" alt="Кредит" />
+                      <img class="service-icon credit-icon" src="img/index/credit.svg" width="156" height="186" alt="Кредит" />
                     </div>
                   </div>
                 </li>
@@ -393,8 +393,8 @@
       <div class="footer-top-right">
         <ul class="footer-authorization">
           <li>
-            <a class="login-2 footer-link" href="#">
-              <div class="icon-login-2">
+            <a class="footer-login footer-link" href="#">
+              <div class="icon-login">
                 <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12">
                   <path d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 
                     0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/>
@@ -408,7 +408,7 @@
         <ul class="footer-operations">
           <li>
             <a class="compare-2 footer-link" href="#">
-              <div class="icon-compare-2">
+              <div class="icon-compare">
                 <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
                   <path d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z"/>
                 </svg>
@@ -418,8 +418,8 @@
           </li>
     
            <li>
-            <a class="cart-2 footer-link" href="#">
-              <div class="icon-cart-2">
+            <a class="footer-cart footer-link" href="#">
+              <div class="icon-cart">
                 <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
                   <path d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 
                     0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 
@@ -513,7 +513,7 @@
         <h2 class="visually-hidden">Форма аутентификации</h2>
         
         <form class="feedback-form" action="#" method="post">
-          <div class="feedbac-label">
+          <div class="feedback-label">
             <p>
               <label for="feedback-name">Ваше имя:</label>
               <input class="feedback-name feedback-input feedback-form-input" type="text" name="modal-name" 

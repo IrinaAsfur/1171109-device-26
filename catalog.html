@@ -11,7 +11,7 @@
   </head>
   
 <body class="catalog-page">
-  <div class="header-container">
+  <div class="content">
     <header class="header">
       <div class="logo-header">
         <a class="logo header-logo" href="index.html">
@@ -30,12 +30,13 @@
       </div>
 
       <div class="functional">
-          <form action="#" method="get">
-            <label class="visually-hidden" for="search-1">Поиск по сайту</label>
+          <form class="search" action="#" method="get">
+            <label class="visually-hidden visually-hidden-ie11" for="search-1">Поиск по сайту</label>
             <input class="search-field" id="search-1" type="search" name="search-1" placeholder="Поиск по сайту" />
             <button class="search-button" type="submit">Найти</button>
           </form>
         
+          
         <ul class="authorization">
           <li class="current-user">
             <a class="user" href="#">Валентин Петухов</a>
@@ -47,6 +48,7 @@
             <a class="header-logout" href="#">Выйти</a>
           </li>
         </ul>
+        
 
         <ul class="operations">
           <li><a class="compare" href="#">Сравнить</a></li>
@@ -65,7 +67,7 @@
                 <li class="catalog-item"><a href="#">Экшн-камеры</a></li>
                 <li class="catalog-item"><a href="#">Фитнес-браслеты</a></li>
                 <li class="catalog-item"><a href="#">Умные часы</a></li>
-                <li class="catalog-item"><a href="#">Квадрокоптеры</a></li>
+                <li class="catalog-item quadrocopters"><a href="#">Квадрокоптеры</a></li>
               </ul>
             </div>
             </li>
@@ -90,7 +92,7 @@
       </div>
 
       <div class="filter-left">
-        <div class="content catalog-content">
+        <div class="content catalog-columns">
           <div class="filter-name">
             <h2 class="filter-headline">ФИЛЬТР:</h2>
           </div>
@@ -100,27 +102,27 @@
           <h2 class="sorting-headline">СОРТИРОВКА:</h2>
           <ul class="sorting-list">
             <li>
-              <input class="sorting-type sorting-price sorting-selected" type="radio" name="sort" value="by-price" id="sort-price" />
+              <input class="visually-hidden sorting-type sorting-price sorting-selected" type="radio" name="sort" value="by-price" id="sort-price" />
               <label for="sort-price">По цене</label>
             </li>
             <li>
-              <input class="sorting-type sorting-kind" type="radio" name="sort" value="by-kind" id="sort-kind" />
+              <input class="visually-hidden sorting-type sorting-kind" type="radio" name="sort" value="by-kind" id="sort-kind" />
               <label for="sort-kind">По типу</label>
             </li>
             <li>
-              <input class="sorting-type sorting-rating" type="radio" name="sort" value="by-rating" id="sort-rating" />
-              <label for="sort-rating">По типу</label>
+              <input class="visually-hidden sorting-type sorting-rating" type="radio" name="sort" value="by-rating" id="sort-rating" />
+              <label for="sort-rating">По популярности</label>
             </li>
           </ul>
 
           <ul class="sorting-graduation">
             <li>
-              <input class="sorting-up sorting-button" type="radio" name="graduation" value="low-to-high" id="low-to-high" />
-              <label class="visually-hidden" for="low-to-high">Сортировка по возрастанию</label>
+              <input class="visually-hidden sorting-up sorting-button" type="radio" name="graduation" value="low-to-high" id="low-to-high" />
+              <label for="low-to-high">Сортировка по возрастанию</label>
             </li>
             <li>
-              <input class="sorting-down sorting-button sorting-selected" type="radio" name="graduation" value="high-to-low" id="high-to-low" />
-              <label class="visually-hidden" for="high-to-low">Сортировка по убыванию</label>
+              <input class="visually-hidden sorting-down sorting-button sorting-selected" type="radio" name="graduation" value="high-to-low" id="high-to-low" />
+              <label for="high-to-low">Сортировка по убыванию</label>
             </li>
           </ul>
         </section>
@@ -129,7 +131,7 @@
     </div>
       
     <div class="catalog-wrapper">
-      <div class="content">        
+      <div class="content catalog-columns">        
         <section class="filters">
           <form class="filter" action="https://echo.htmlacademy.ru" method="get">
   
@@ -210,7 +212,7 @@
           </div>
           <div class="stick">
             <a class="item" href="#">
-              <h3>Профессиональная селфи-палка</h3>
+              <h3>Профессиональная &nbsp; &nbsp; &nbsp; селфи-палка</h3>
             </a>
             <p>1 500 руб.</p>
           </div>
@@ -247,7 +249,7 @@
       </ul>
 
       <h2 class="visually-hidden">Навигация по страницам каталога</h2>
-      <ul class="paginator">
+      <ul class="pagination">
         <li class="page back">
           <button class="pagination-button pagination-back">
             <span class="button-text">НАЗАД</span>
@@ -286,8 +288,8 @@
             <div class="footer-top-right">
                 <ul class="footer-authorization">
                   <li class="current-user">
-                    <a class="login-2 footer-link" href="#">
-                      <div class="icon-login-2">
+                    <a class="footer-login footer-link" href="#">
+                      <div class="icon-login">
                         <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12">
                           <path d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 
                             0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/>
@@ -298,7 +300,7 @@
                   </li>
                 </ul>
 
-                <ul class="user-controls">
+                <ul class="footer-user-controls">
                   <li>
                     <a class="footer-logout" href="#">Выйти</a>
                   </li>
@@ -307,7 +309,7 @@
                 <ul class="footer-operations">
                   <li>
                     <a class="compare-2 footer-link" href="#">
-                      <div class="icon-compare-2">
+                      <div class="icon-compare">
                         <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
                           <path d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z"/>
                         </svg>
@@ -317,8 +319,8 @@
                   </li>
             
                    <li>
-                    <a class="cart-2 footer-link" href="#">
-                      <div class="icon-cart-2">
+                    <a class="footer-cart footer-link" href="#">
+                      <div class="icon-cart">
                         <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
                           <path d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 
                             0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 
@@ -412,7 +414,7 @@
                 <h2 class="visually-hidden">Форма аутентификации</h2>
                 
                 <form class="feedback-form" action="#" method="post">
-                  <div class="feedbac-label">
+                  <div class="feedback-label">
                     <p>
                       <label for="feedback-name">Ваше имя:</label>
                       <input class="feedback-name feedback-input feedback-form-input" type="text" name="modal-name" 

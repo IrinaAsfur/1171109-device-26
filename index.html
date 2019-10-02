@@ -79,13 +79,13 @@
           <div class="slider-controls">
             <ul>
               <li class="slider-control">
-                <label class="slider-label slider-label-1" for="btn-1" tabindex="0">Показать первый слайдер</label>
+                <label class="slider-label slider-label-1" for="btn-1" tabindex="0"><span class="visually-hidden">Показать первый слайдер</span></label>
               </li>
               <li class="slider-control">
-                <label class="slider-label slider-label-2" for="btn-2" tabindex="0">Показать второй слайдер</label>
+                <label class="slider-label slider-label-2" for="btn-2" tabindex="0"><span class="visually-hidden">Показать второй слайдер</span></label>
               </li>
               <li class="slider-control">
-                <label class="slider-label slider-label-3" for="btn-3" tabindex="0">Показать третий слайдер</label>
+                <label class="slider-label slider-label-3" for="btn-3" tabindex="0"><span class="visually-hidden">Показать третий слайдер</span></label>
               </li>
             </ul>
           </div>
@@ -93,10 +93,12 @@
             <div class="products-slider">
               <ul class="featured-products">
 
-                  <li class="slide">
+                  <li class="slide slide-1">
                     <h3 class="visually-hidden">Самая длинная палка для селфи</h3>
+
+                    <input class="slider-input visually-hidden" id="btn-1" type="radio" name="slider-button" checked />
+
                     <div class="content-list">
-                      <input class="slider-input" id="btn-1" type="radio" name="slider-button" checked />
 
                     <div class="slide-image">
                       <img src="img/index/slider-long-stick.png" width="384" height="486" alt="Самая длинная палка для селфи" />
@@ -123,10 +125,13 @@
                   </div>
                 </li>
                           
-              <li class="slide visually-hidden">
+              <li class="slide slide-2">
                 <h3 class="visually-hidden">Умные фитнес-браслеты</h3>
+
+                <input class="slider-input visually-hidden" id="btn-2" type="radio" name="slider-button" />
+
                 <div class="content-list">
-                  <input class="slider-input" id="btn-2" type="radio" name="slider-button" />
+                
                     <div class="slide-image">
                       <img src="img/index/slider-smart-watch.png" width="345" height="485" alt="Умный фитнес-браслет" />
                     </div>
@@ -148,10 +153,13 @@
                   </div>
                 </li>
                      
-                  <li class="slide visually-hidden">
+                  <li class="slide slide-3">
                     <h3 class="visually-hidden">Лазерный квадрокоптер</h3>
+
+                    <input class="slider-input visually-hidden" id="btn-3" type="radio" name="slider-button" />
+
                   <div class="content-list">
-                    <input class="slider-input" id="btn-3" type="radio" name="slider-button" />
+                   
                     <div class="slide-image">
                       <img src="img/index/slider-quadrocopter.png" width="526" height="334" alt="Лазерный квадрокоптер" />
                     </div>
@@ -252,7 +260,7 @@
               </ul>
 
               <ul class="services-list">
-                <li class="services-list-item delivery-service hiding-class shown">
+                <li class="services-list-item delivery-service shown">
                   <input class="services-input visually-hidden" id="btn-delivery" type="radio" name="services-button" checked />
                   <div class="service-description">
                     <div class="service-description-case">
@@ -267,7 +275,7 @@
                   </div>
                 </li>
           
-                <li class="services-list-item warranty-service hiding-class hidden">
+                <li class="services-list-item warranty-service">
                   <input class="services-input visually-hidden" id="btn-warranty" type="radio" name="services-button" />
                   <div class="service-description">
                     <div class="service-description-case">
@@ -282,7 +290,7 @@
                   </div>
                 </li>
        
-                <li class="services-list-item credit-service hiding-class hidden">
+                <li class="services-list-item credit-service">
                   <input class="services-input visually-hidden" id="btn-credit" type="radio" name="services-button" />
                   <div class="service-description">
                     <div class="service-description-case">

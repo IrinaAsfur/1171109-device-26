@@ -2456,10 +2456,9 @@ p.about-delivery {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
 
     margin: 0;
     margin-left: 50px;
@@ -2726,3 +2725,33 @@ p.about-delivery {
 .shown {
     display: block;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slider-input + .content-list div {
+    display: none;
+}
+
+.slider-input:checked + .content-list div { 
+    display: block;
+} 
+
+
+
+.services-input + .service-description div {
+    display: none;
+}
+
+.services-input:checked + .service-description div { 
+    display: block;
+} 

@@ -37,7 +37,7 @@
           </form>
         
           
-        <ul class="authorization">
+        <ul class="authorization header-user">
           <li class="current-user">
             <a class="user" href="#">Валентин Петухов</a>
           </li>
@@ -102,27 +102,27 @@
           <h2 class="sorting-headline">СОРТИРОВКА:</h2>
           <ul class="sorting-list">
             <li>
-              <input class="visually-hidden sorting-type sorting-price sorting-selected" type="radio" name="sort" value="by-price" id="sort-price" />
-              <label for="sort-price">По цене</label>
+              <input class="visually-hidden" type="radio" name="sort" value="by-price" id="sort-price" checked />
+              <label class="sorting-type sorting-price sorting-selected" for="sort-price">По цене</label>
             </li>
             <li>
-              <input class="visually-hidden sorting-type sorting-kind" type="radio" name="sort" value="by-kind" id="sort-kind" />
-              <label for="sort-kind">По типу</label>
+              <input class="visually-hidden" type="radio" name="sort" value="by-kind" id="sort-kind" />
+              <label class="sorting-type sorting-kind" for="sort-kind">По типу</label>
             </li>
             <li>
-              <input class="visually-hidden sorting-type sorting-rating" type="radio" name="sort" value="by-rating" id="sort-rating" />
-              <label for="sort-rating">По популярности</label>
+              <input class="visually-hidden" type="radio" name="sort" value="by-rating" id="sort-rating" />
+              <label class="sorting-type sorting-rating" for="sort-rating">По популярности</label>
             </li>
           </ul>
 
           <ul class="sorting-graduation">
             <li>
-              <input class="visually-hidden sorting-up sorting-button" type="radio" name="graduation" value="low-to-high" id="low-to-high" />
-              <label for="low-to-high">Сортировка по возрастанию</label>
+              <input class="visually-hidden" type="radio" name="graduation" value="low-to-high" id="low-to-high" />
+              <label class="sorting-up sorting-button" for="low-to-high"><span class="visually-hidden">Сортировка по возрастанию</span></label>
             </li>
             <li>
-              <input class="visually-hidden sorting-down sorting-button sorting-selected" type="radio" name="graduation" value="high-to-low" id="high-to-low" />
-              <label for="high-to-low">Сортировка по убыванию</label>
+              <input class="visually-hidden" type="radio" name="graduation" value="high-to-low" id="high-to-low" checked />
+              <label class="sorting-down sorting-button sorting-selected" for="high-to-low"><span class="visually-hidden">Сортировка по убыванию</span></label>
             </li>
           </ul>
         </section>
@@ -137,9 +137,23 @@
   
             <h2 class="visually-hidden">Ползунок ценового диапазона</h2>
             <fieldset class="filter-price">
-              <legend>Стоимость</legend>
-              <!-- ползунок от 0 до 5000 -->
-            </fieldset>
+                <legend>Стоимость</legend>
+                  <div class="scroll">
+                    <div class="scroll-controls">
+                      <div class="scale">
+                        <div class="bar"></div>
+                      </div>
+                      <div class="set-price min-price">
+                        <div class="toggle min-toggle"></div>
+                        <p class="price-view">от 0</p>
+                      </div>
+                      <div class="set-price max-price">
+                        <div class="toggle max-toggle"></div>
+                        <p class="price-view">до 5000</p>
+                      </div>
+                    </div>                    
+                  </div>
+              </fieldset>
 
         <h2 class="visually-hidden">Фильтрация товаров по цвету</h2>
         <fieldset class="filter-color">
@@ -408,44 +422,6 @@
             </div>
           </div>
         </div>
-        </footer>
-        
-            <section class="modal modal-feedback">
-                <h2 class="visually-hidden">Форма аутентификации</h2>
-                
-                <form class="feedback-form" action="#" method="post">
-                  <div class="feedback-label">
-                    <p>
-                      <label for="feedback-name">Ваше имя:</label>
-                      <input class="feedback-name feedback-input feedback-form-input" type="text" name="modal-name" 
-                        id="feedback-name" placeholder="Имя Фамилия" />
-                    </p>
-        
-                    <p>
-                      <label for="feedback-email">Ваш e-mail:</label>
-                      <input class="feedback-email feedback-input feedback-form-input" type="email" name="modal-email"
-                        id="feedback-email" placeholder="email@example.com" />
-                    </p>
-                  </div>
-        
-                  <p>
-                    <label for="feedback-text">Текст письма:</label>
-                    <textarea class="feedback-text feedback-input feedback-form-input" name="modal-text" 
-                      id="feedback-text" rows="5" cols="80">В свободной форме</textarea>
-                  </p>
-        
-                  <button class="feedback-button button" type="submit">Отправить</button>
-                </form>
-                  <button class="modal-close" type="button"><span class="visually-hidden">Закрыть форму аутентификации</span></button>
-              </section>
-        
-              <section class="modal modal-map">
-                <h2 class="visually-hidden">Как до нас добраться</h2>
-                  <iframe src="" width="960" height="559"></iframe>
-                  <a class="modal-map-widget" href="#">
-                    <img src="img/shared/map-popup.jpg" width="960" height="559" alt="Адрес офиса компании: г. Москва, ул. Строителей, 15">
-                  </a>
-                  <button class="modal-close" type="button"><span class="visually-hidden">Закрыть карту</span></button>
-                </section>
-          </body>
-        </html>
+      </footer>
+    </body>
+  </html>

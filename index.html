@@ -40,7 +40,7 @@
           <li><a class="login" href="#">Войти</a></li>
         </ul>
 
-        <ul class="operations">
+        <ul class="operations header-operations">
           <li><a class="compare" href="#">Сравнить</a></li>
           <li><a class="cart" href="#">Корзина</a></li>
         </ul>
@@ -77,28 +77,24 @@
           <h2 class="visually-hidden">Преимущества товаров</h2>
 
           <div class="slider-controls">
-            <ul>
-              <li class="slider-control">
-                <label class="slider-label slider-label-1" for="btn-1" tabindex="0"><span class="visually-hidden">Показать первый слайдер</span></label>
-              </li>
-              <li class="slider-control">
-                <label class="slider-label slider-label-2" for="btn-2" tabindex="0"><span class="visually-hidden">Показать второй слайдер</span></label>
-              </li>
-              <li class="slider-control">
-                <label class="slider-label slider-label-3" for="btn-3" tabindex="0"><span class="visually-hidden">Показать третий слайдер</span></label>
-              </li>
-            </ul>
+            
+                <label class="jjj" for="btn-1" tabindex="0"><span class="visually-hidden">Показать первый слайдер</span></label>
+              
+                <label class="jjj" for="btn-2" tabindex="0"><span class="visually-hidden">Показать второй слайдер</span></label>
+             
+                <label class="jjj" for="btn-3" tabindex="0"><span class="visually-hidden">Показать третий слайдер</span></label>
+             
           </div>
 
             <div class="products-slider">
               <ul class="featured-products">
 
-                  <li class="slide slide-1">
+                  <li class="slide" id="slide1">
                     <h3 class="visually-hidden">Самая длинная палка для селфи</h3>
 
                     <input class="slider-input visually-hidden" id="btn-1" type="radio" name="slider-button" checked />
 
-                    <div class="content-list">
+                    <div class="content-list one">
 
                     <div class="slide-image">
                       <img src="img/index/slider-long-stick.png" width="384" height="486" alt="Самая длинная палка для селфи" />
@@ -125,18 +121,18 @@
                   </div>
                 </li>
                           
-              <li class="slide slide-2">
+              <li class="slide" id="slide2">
                 <h3 class="visually-hidden">Умные фитнес-браслеты</h3>
 
                 <input class="slider-input visually-hidden" id="btn-2" type="radio" name="slider-button" />
 
-                <div class="content-list">
+                <div class="content-list two">
                 
                     <div class="slide-image">
                       <img src="img/index/slider-smart-watch.png" width="345" height="485" alt="Умный фитнес-браслет" />
                     </div>
                     <div class="slide-description">
-                      <p class="item-promo">Худеем &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; правильно!</p>
+                      <p class="item-promo">Худеем &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; правильно!</p>
                       <p class="item-info">
                         Мотивирующие фитнес-браслеты помогут найти в себе силы не&nbsp;пропускать занятия и соблюдать диету.
                       </p>
@@ -153,18 +149,18 @@
                   </div>
                 </li>
                      
-                  <li class="slide slide-3">
+                  <li class="slide" id="slide3">
                     <h3 class="visually-hidden">Лазерный квадрокоптер</h3>
 
                     <input class="slider-input visually-hidden" id="btn-3" type="radio" name="slider-button" />
 
-                  <div class="content-list">
+                  <div class="content-list three">
                    
-                    <div class="slide-image">
+                    <div class="slide-image slide-image-quadrocopter">
                       <img src="img/index/slider-quadrocopter.png" width="526" height="334" alt="Лазерный квадрокоптер" />
                     </div>
                     <div class="slide-description">
-                      <p class="item-promo">Порхай как бабочка, жаль как пчела!</p>
+                      <p class="item-promo">Порхает как бабочка, жалит как пчела!</p>
                       <p class="item-info">
                         Этот обычный, на первый взгляд, квадрокоптер оснащен мощным&nbsp;лазером, замаскированным под стандартную камеру.
                       </p>
@@ -249,7 +245,7 @@
 
               <ul class="button-list">
                 <li>
-                  <label class="button service-button service-button-active" for="btn-delivery" tabindex="0">Доставка</label>
+                  <label class="first-line services-button-active" for="btn-delivery" tabindex="0">Доставка</label>
                 </li>
                 <li>
                   <label class="button service-button" for="btn-warranty" tabindex="0">Гарантия</label>
@@ -370,12 +366,12 @@
         </p>
 
       <div class="contacts-map">
-        <a class="map" href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%A1%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9,+15,+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,+119311/@55.687034,37.5274293,17z/data=!3m1!4b1!4m5!3m4!1s0x46b54cf65f5c8955:0x694710ccd55501e!8m2!3d55.687031!4d37.529618" aria-label="Адрес офиса компании: г. Москва, ул. Строителей, 15">
+        <a class="map" href="map.html" aria-label="Адрес офиса компании: г. Москва, ул. Строителей, 15">
           <img class="map-image" src="img/index/map.jpg" width="560" height="222" alt="Адрес офиса компании: г. Москва, ул. Строителей, 15" />
         </a>
       </div>
 
-        <a class="feedback button" href="#">Напишите нам</a>
+        <a class="feedback button" href="feedback.html">Напишите нам</a>
       </section>
     </div>
   </div>
@@ -399,7 +395,7 @@
         </a>
         
       <div class="footer-top-right">
-        <ul class="footer-authorization">
+        <ul class="footer-authorization footer-enter">
           <li>
             <a class="footer-login footer-link" href="#">
               <div class="icon-login">
@@ -520,17 +516,17 @@
     <section class="modal modal-feedback">
         <h2 class="visually-hidden">Форма аутентификации</h2>
         
-        <form class="feedback-form" action="#" method="post">
+        <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="feedback-label">
             <p>
               <label for="feedback-name">Ваше имя:</label>
-              <input class="feedback-name feedback-input feedback-form-input" type="text" name="modal-name" 
+              <input class="feedback-name feedback-input feedback-form-input" type="text" name="name" 
                 id="feedback-name" placeholder="Имя Фамилия" />
             </p>
 
             <p>
               <label for="feedback-email">Ваш e-mail:</label>
-              <input class="feedback-email feedback-input feedback-form-input" type="email" name="modal-email"
+              <input class="feedback-email feedback-input feedback-form-input" type="email" name="email"
                 id="feedback-email" placeholder="email@example.com" />
             </p>
           </div>
@@ -548,7 +544,7 @@
 
       <section class="modal modal-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
-          <iframe src="" width="960" height="559"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1337.3209946061852!2d37.52832245806247!3d55.68730373599989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2sby!4v1560168631620!5m2!1sru!2sby" width="960" height="560" style="border:0" allowfullscreen></iframe>
           <a class="modal-map-widget" href="#">
             <img src="img/shared/map-popup.jpg" width="960" height="559" alt="Адрес офиса компании: г. Москва, ул. Строителей, 15">
           </a>

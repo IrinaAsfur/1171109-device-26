@@ -1,89 +1,66 @@
+var linkfeedback = document.querySelector(".feedback"); // кнопка Напишите нам
+var popupfeedback = document.querySelector(".modal-feedback"); // Модалка с формой
+var closefeedbackPopup = popupfeedback.querySelector(".modal-close"); // Кнопка закрытm
 
-var link = document.querySelector(".feedback"); // кнопка Напишите нам
-var popup = document.querySelector(".modal-feedback"); // Модалка с формой
+var linkMap = document.querySelector(".map"); // кнопка Контакты
+var popupMap = document.querySelector(".modal-map"); // модалка карты
+var closeMapPopup = popupMap.querySelector(".modal-close"); // Кнопка закрытm
 
-var close = popup.querySelector(".modal-close"); // Кнопка закрытm
+var feedbackSubmit = popupfeedback.querySelector(".submit") 
 
-
-var formName = popup.querySelector("[name=name]"); // поле Имя
-var formEmail = popup.querySelector("[name=email]"); // поле почта
-
-var text = popup.querySelector("[name=modal-text]"); // поле текст??
- 
-var form = popup.querySelector("form");
+var feedbackForm = popupfeedback.querySelector(".feedback-form")
+var feedbackName = popupfeedback.querySelector(".feedback-name");
+var feedbackEmail = popupfeedback.querySelector(".feedback-email");
+var feedbackText = popupfeedback.querySelector(".feedback-text");
 
 
 var isStorageSupport = true;
 var storage = "";
 
+
 try {
-  storage = localStorage.getItem("name");
+  storage = localStorage.getItem("feedback");
 } catch (err) {
   isStorageSupport = false;
 }
 
-link.addEventListener("click", function (evt) {
+linkfeedback.addEventListener("click", function (evt) {
   evt.preventDefault();
-  popup.classList.add("modal-show");
-  if (storage) {
-    formName.value = storage;
-    formEmail.focus();
-  } else {
-    formName.focus();
-  }
+  popupfeedback.classList.add("modal-show");
+  feedbackName.focus();
 });
-close.addEventListener("click", function (evt) {
+
+closefeedbackPopup.addEventListener("click", function(evt) {
   evt.preventDefault();
-  popup.classList.remove("modal-show");
-  popup.classList.remove("modal-error");
+  popupfeedback.classList.remove("modal-show");
+  popupfeedback.classList.remove("wrong-input");  
 });
-form.addEventListener("submit", function (evt) {
+
+linkMap.addEventListener("click", function(evt) {
   evt.preventDefault();
-  if (!formName.value || !formEmail.value) {
+  popupMap.classList.add("modal-show");
+});
+
+closeMapPopup.addEventListener("click", function(evt) {
+  popupMap.classList.remove("modal-show");
+})
+
+feedbackForm.addEventListener("submit", function(evt) {
+  if (!feedbackName.value || !feedbackEmail.value  || !feedbackText.value) {
     evt.preventDefault();
-    popup.classList.remove("modal-error");
-    popup.offsetWidth = popup.offsetWidth;
-    popup.classList.add("modal-error");
-  }else {
-    if (isStorageSupport) {
-      localStorage.setItem("name", formName.value);
-    }
+    popupfeedback.classList.remove("wrong-input");
+    popupfeedback.classList.add("wrong-input");
   }
 });
 
-window.addEventListener("keydown", function (evt) {
+window.addEventListener("keydown", function(evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
-    if (popup.classList.contains("modal-show")) {
-      popup.classList.remove("modal-show");
-      popup.classList.remove("modal-error");
+
+    if (popupfeedback.classList.contains("modal-show") || popupMap.classList.contains("modal-show")) {
+      popupfeedback.classList.remove("modal-show");
+      popupMap.classList.remove("modal-show");
+      popupfeedback.classList.remove("wrong-input");  
     }
   }
 });
-
-
-
-
-  var mapLink = document.querySelector(".map"); // кнопка Контакты
-
-  var mapPopup = document.querySelector(".modal-map"); // модалка карты
-  var mapClose = mapPopup.querySelector(".modal-close"); // закрыть
-
-  mapLink.addEventListener("click", function (evt) {
-  	evt.preventDefault();
-  	mapPopup.classList.add("modal-show");
-  });
-
-  mapClose.addEventListener("click", function (evt) {
-  	evt.preventDefault();
-  	mapPopup.classList.remove("modal-show");
-  });
-
-  window.addEventListener("keydown", function (evt) {
-  	evt.preventDefault();
-  	if (evt.keyCode === 27) {
-  		if (mapPopup.classList.contains("modal-show")) {
-  			mapPopup.classList.remove("modal-show");
-  		}
-  	}
-  });

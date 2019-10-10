@@ -101,7 +101,7 @@ a {
 }
   
 .functional .search {
-    position: relative;   
+    position: relative;  
   
     display: -webkit-box;   
     
@@ -513,8 +513,12 @@ p.about-delivery {
 }
 
 .header .search-field {
+position: relative;
+
     font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 300;
+
+    top: -9px;
 
     background-color: transparent;
     border: none;
@@ -584,12 +588,12 @@ p.about-delivery {
   
 .functional .search-field {
     min-width: 356px;
-    height: 39px;
+    height: 48px;
     padding-left: 40px;
-    padding-bottom: 10px;
+    
 
     background-image: url("../img/shared/search.svg");
-    background-position: 4px 7px;
+    background-position: 4px 15px;
     background-repeat: no-repeat;
 }
   
@@ -616,6 +620,8 @@ p.about-delivery {
     background-color: transparent;
     border: 2px solid #000000;
     opacity: 0;
+
+    cursor: pointer;
 }
   
 .search-field:focus + .search-button {
@@ -1853,8 +1859,6 @@ p.about-delivery {
 }
 
 .content-list::before {
- 
-  
     position: absolute;
     top: -12px;
     right: 48px;
@@ -1874,12 +1878,14 @@ p.about-delivery {
     content: '01';
     
 }
+
 .content-list.two::before{
     content: '02';
 
     top: -10px;
     right: 25px;
 }
+
 .content-list.three::before{
     content: '03';
 
@@ -2011,14 +2017,8 @@ p.about-delivery {
     width: 220px;
 }
 
-
-
-
-
-
 .slider-controls label {
     display: inline-block;
-    
 
     width: 12px;
     height: 12px;
@@ -2030,7 +2030,6 @@ p.about-delivery {
     border-radius: 50%;
     background-image: url("../img/index/slider-button-empty.svg");
     background-size: 100%;
-
 }
 
 .slider-controls {
@@ -2044,14 +2043,15 @@ p.about-delivery {
     bottom: 43%;
 }
 
-.slider-input + div {
+.slide {
     display: none;
 }
 
-.slider-input:checked + div { 
-    display: flex;
-} 
-
+#btn-1:checked ~ .features #slide1,
+#btn-2:checked ~ .features #slide2,
+#btn-3:checked ~ .features #slide3 {
+    display: block;
+}
 
 #btn-1:checked ~ .features label[for="btn-1"],
 #btn-2:checked ~ .features label[for="btn-2"],
@@ -2062,14 +2062,6 @@ p.about-delivery {
     background-image: url("../img/index/slider-button.svg");
    
 }
-
-
-
-
-
-
-
-
 
 .categories {
     margin-bottom: 161px;
@@ -2286,7 +2278,7 @@ p.about-delivery {
     position: relative;
   
     width: 160px;
-    padding: 10px;
+    
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, transparent), color-stop(40%, #f0c52e), color-stop(60%, #f0c52e), color-stop(60%, transparent));
 
     background-image: -webkit-linear-gradient(top, transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%);
@@ -2315,112 +2307,40 @@ p.about-delivery {
     background-color: #000000;
 }
 
-.first-line {
-    font-family: "Gilroy", "Helvetica", sans-serif;
-    font-size: 18px;
-    font-weight: 800;
-    line-height: 1.33;
-
-    position: relative;
-    z-index: 1;
-
-    display: -webkit-box;
-
-    display: -ms-flexbox;
-
-    display: flex;
-
-    text-align: center;
-    letter-spacing: 3.6px;
-    text-transform: uppercase;
-
-    color: #000;
-    border: none;
-    background-color: transparent;
-
-    -webkit-box-pack: center;
-
-        -ms-flex-pack: center;
-
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-
-            cursor: pointer;
-}
-
-.first-line::before {
-    content: "";
-
-    position: absolute;
-    z-index: -1;
-    top: 25%;
-    left: 0;
-
-    width: 282px;
-    height: 50%;
-
-    -webkit-transition: inherit;
-    -o-transition: inherit;
-    transition: inherit;
-
-    color: #000;
-    background-color: #f7e296;
-}
-
-.first-line:active {
-    color: rgba(0, 0, 0, 0.3);
-}
-.first-line:active::before {
-    top: -10px;
-
-    height: 40px;
-}
-
-.services-button-active,
-.services-button-active:hover,
-.services-button-active:focus,
-.services-button-active:active {
-    font-family: "Gilroy", "Helvetica", sans-serif;
-    font-size: 18px;
-    font-weight: 800;
-    line-height: 1.33;
-
-    position: relative;
-    z-index: 1;
-
-    text-align: center;
-    letter-spacing: 3.6px;
-    text-transform: uppercase;
-
-    color: #f7e296;
-
-    cursor: pointer;
-}
-.services-button-active::before {
-    content: "";
-
-    position: absolute;
-    z-index: -1;
-    top: -10px;
-
-    height: 40px;
-
-    -webkit-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    transition: all 0.2s;
-
-    background-color: #000;
-}
-
-.services-input + .service-description {
+.services-list-item {
     display: none;
 }
 
-.services-input:checked + .service-description { 
+#btn-delivery:checked ~ .content #service1,
+#btn-warranty:checked ~ .content #service2,
+#btn-credit:checked ~ .content #service3 {
     display: flex;
-} 
+}
+
+
+#btn-delivery:checked ~ .content label[for="btn-delivery"],
+#btn-warranty:checked ~ .content label[for="btn-warranty"],
+#btn-credit:checked ~ .content label[for="btn-credit"] {
+    color: #f7e184;
+
+    background-color: #000000;
+    background-image: none;
+}
+
+#btn-delivery:checked ~ .content label[for="btn-delivery"]::before,
+#btn-warranty:checked ~ .content label[for="btn-warranty"]::before,
+#btn-credit:checked ~ .content label[for="btn-credit"]::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: -118px;
+
+    width: 118px;
+    height: 40px;
+
+    background-color: #000000;
+}
 
 .partners-list {
     display: -webkit-box;
@@ -2449,64 +2369,39 @@ p.about-delivery {
     display: block;
 }
 
-.dji {
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-    filter: grayscale(100%);
-    opacity: 0.2;
+.dji:hover::before,
+.dji:focus::before {
+  content: url("../img/index/logo-dji.jpg");
+
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.dji:hover,
-.dji:focus {
-    filter: none;
-    opacity: 1;
-}  
+.sp-gadgets:hover::before,
+.sp-gadgets:focus::before {
+  content: url("../img/index/logo-spgadjets.jpg");
 
-.sp-gadgets {
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-    filter: grayscale(100%);
-    opacity: 0.2;
+  position: absolute;
+  top: 0;
+  left: 0; 
 }
 
-.sp-gadgets:hover,
-.sp-gadgets:focus {
-    filter: none;
-    opacity: 1;
-}
-  
-.gopro {
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-    filter: grayscale(100%);
-    opacity: 0.2;
+.gopro:hover::before,
+.gopro:focus::before {
+  content: url("../img/index/logo-gopro.jpg");
+
+  position: absolute;
+  top: 0;
+  left: 0; 
 }
 
-.gopro:hover,
-.gopro:focus {
-    filter: none;
-    opacity: 1;
-}
-  
-.vive {
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-    filter: grayscale(100%);
-    opacity: 0.2;
-}
+.vive:hover::before {
+  content: url("../img/index/logo-vive.jpg");
 
-.vive:hover,
-.vive:focus {
-    filter: none;
-    opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0; 
 }
 
 .filter-left {  
@@ -2611,10 +2506,6 @@ p.about-delivery {
     opacity: 1;
 }
   
-.sorting-type.sorting-selected {
-    opacity: 1;
-}
-  
 .sorting-graduation {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2655,7 +2546,7 @@ p.about-delivery {
     left: 0;
 }
   
-.sorting-up::before {
+.sorting-button::before {
     content: url("../img/catalog/icon-up.svg");
     opacity: 0.2;
 
@@ -2665,11 +2556,15 @@ p.about-delivery {
 }
 
 .sorting-down::before {
-    content: url("../img/catalog/icon-down.svg");
-
     top: -1px;
   
     margin-left: 2px;
+
+    -webkit-transform: rotate(180deg);
+  
+      -ms-transform: rotate(180deg);
+  
+          transform: rotate(180deg);
 }
   
 .sorting-button:hover::before,
@@ -2681,7 +2576,11 @@ p.about-delivery {
     opacity: 1;
 }
 
-.sorting-button.sorting-selected::before {
+.filter-sorting:checked + label {
+    opacity: 1;
+}
+
+.filter-graduation:checked + label::before{
     opacity: 1;
 }
 
@@ -2858,13 +2757,14 @@ p.about-delivery {
     cursor: pointer;
 }
   
-.toggle:active {
-    width: 5px;
-    height: 5px;
-  
-    border: 8px solid #ffffff;
+.toggle:active { 
+    transform: scale(1.1); 
+    -webkit-transform: scale(1.1); 
+    -moz-transform: scale(1.1); 
+    -ms-transform: scale(1.1); 
+    -o-transform: scale(1.1);
 }
-  
+
 .set-price .price-view {  
     margin: 0;  
     padding: 0;
@@ -2889,40 +2789,29 @@ p.about-delivery {
     left: -17px;
 }
 
-
-
-
-
-
-
-
-
 .modal-show {
     display: block;
-
-    -webkit-animation: bounce 0.6s;
-
-            animation: bounce 0.6s;
-
+  
+    -webkit-animation-name: popup-show;
+  
+            animation-name: popup-show;
     -webkit-animation-duration: 0.6s;
             animation-duration: 0.6s;
     -webkit-animation-timing-function: ease;
             animation-timing-function: ease;
     -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;        
-}
-
-.modal-error {
-    -webkit-animation: shake 0.6s;
-            animation: shake 0.6s;
-
+            animation-fill-mode: forwards;
+  }
+  
+  .wrong-input {
+    -webkit-animation-name: back_red_color;
+            animation-name: back_red_color;
     -webkit-animation-duration: 0.6s;
             animation-duration: 0.6s;
     -webkit-animation-timing-function: ease;
             animation-timing-function: ease;
-}
+  }
 
-/*Анимация для модалки*/
 @-webkit-keyframes bounce{
     0%{
         -webkit-transform: translateY(-2000px);

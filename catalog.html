@@ -7,7 +7,6 @@
     <meta name="description" content="Интернет-магазин DEVICE с лучшими моноподами, большой выбор и приятные цены!">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/normalize.css" />
-    <script src="js/script.js"></script>
   </head>
   
 <body class="catalog-page">
@@ -102,27 +101,27 @@
           <h2 class="sorting-headline">СОРТИРОВКА:</h2>
           <ul class="sorting-list">
             <li>
-              <input class="visually-hidden" type="radio" name="sort" value="by-price" id="sort-price" checked />
-              <label class="sorting-type sorting-price sorting-selected" for="sort-price">По цене</label>
+              <input class="visually-hidden filter-sorting" type="radio" name="sort" value="by-price" id="sort-price" checked />
+              <label class="sorting-type sorting-price" for="sort-price">По цене</label>
             </li>
             <li>
-              <input class="visually-hidden" type="radio" name="sort" value="by-kind" id="sort-kind" />
+              <input class="visually-hidden filter-sorting" type="radio" name="sort" value="by-kind" id="sort-kind" />
               <label class="sorting-type sorting-kind" for="sort-kind">По типу</label>
             </li>
             <li>
-              <input class="visually-hidden" type="radio" name="sort" value="by-rating" id="sort-rating" />
+              <input class="visually-hidden filter-sorting" type="radio" name="sort" value="by-rating" id="sort-rating" />
               <label class="sorting-type sorting-rating" for="sort-rating">По популярности</label>
             </li>
           </ul>
 
           <ul class="sorting-graduation">
             <li>
-              <input class="visually-hidden" type="radio" name="graduation" value="low-to-high" id="low-to-high" />
+              <input class="visually-hidden filter-graduation" type="radio" name="graduation" value="low-to-high" id="low-to-high" />
               <label class="sorting-up sorting-button" for="low-to-high"><span class="visually-hidden">Сортировка по возрастанию</span></label>
             </li>
             <li>
-              <input class="visually-hidden" type="radio" name="graduation" value="high-to-low" id="high-to-low" checked />
-              <label class="sorting-down sorting-button sorting-selected" for="high-to-low"><span class="visually-hidden">Сортировка по убыванию</span></label>
+              <input class="visually-hidden filter-graduation" type="radio" name="graduation" value="high-to-low" id="high-to-low" checked />
+              <label class="sorting-down sorting-button" for="high-to-low"><span class="visually-hidden">Сортировка по убыванию</span></label>
             </li>
           </ul>
         </section>
@@ -207,7 +206,7 @@
       <ul class="products-list">
         <li class="goods">
           <div class="mask">
-            <a class="to-cart button" href="#">В корзину</a>
+            <button class="to-cart button" id="to-cart-1" type="button">В корзину</button>
             <button class="to-compare" id="add-1" type="button">Добавить к сравнению</button>
           </div>
           <div class="stick">
@@ -221,7 +220,7 @@
 
         <li class="goods">
           <div class="mask">
-            <a class="to-cart button" href="#">В корзину</a>
+            <button class="to-cart button" id="to-cart-2" type="button">В корзину</button>
             <button class="to-compare" id="add-2" type="button">Добавить к сравнению</button>
           </div>
           <div class="stick">
@@ -235,7 +234,7 @@
       
         <li class="goods">
           <div class="mask">
-            <a class="to-cart button" href="#">В корзину</a>
+            <button class="to-cart button" id="to-cart-3" type="button">В корзину</button>
             <button class="to-compare" id="add-3" type="button">Добавить к сравнению</button>
           </div>
           <div class="stick">
@@ -249,7 +248,7 @@
 
         <li class="goods new-product">
           <div class="mask">
-            <a class="to-cart button" href="#">В корзину</a>
+            <button class="to-cart button" id="to-cart-4" type="button">В корзину</button>
             <button class="to-compare" id="add-4" type="button">Добавить к сравнению</button>
           </div>
           <div class="stick">
@@ -285,7 +284,7 @@
     <footer class="footer"> 
         <div class="content">
           <div class="footer-top">
-            <a class="logo footer-logo" href="#">
+            <a class="logo footer-logo" href="index.html">
               <svg xmlns="http://www.w3.org/2000/svg" width="165" height="35" viewBox="0 0 164 35" aria-label="DEVICE logo">
                 <path id="footer-logo" d="m0.35 0.7v33.6h13.532a15.723 15.723 0 0 0 11.72-4.824 16.464 16.464 0 0 0 4.712-11.976 16.465 16.465 
                   0 0 0-4.712-11.976 15.723 15.723 0 0 0-11.72-4.824zm7.733 26.208v-18.819h5.8a8.648 8.648 0 0 1 6.5 2.568 9.412 

@@ -7,14 +7,13 @@
     <meta name="description" content="Интернет-магазин DEVICE с лучшей цифровой техникой, а также c доставкой и гарантией!">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/normalize.css" />
-    <script src="js/script.js"></script>
+    
   </head>
 
   <body>
     <div class="content">
     <header class="header">
-      <div class="logo-header">
-        <a class="logo header-logo" href="#">
+      <div class="logo-header logo header-logo">
           <svg xmlns="http://www.w3.org/2000/svg" width="165" height="35" viewBox="0 0 164 35" aria-label="DEVICE logo">
             <path id="header-logo" d="m0.35 0.7v33.6h13.532a15.723 15.723 0 0 0 11.72-4.824 16.464 16.464 0 0 0 4.712-11.976 16.465 16.465 
               0 0 0-4.712-11.976 15.723 15.723 0 0 0-11.72-4.824zm7.733 26.208v-18.819h5.8a8.648 8.648 0 0 1 6.5 2.568 9.412 
@@ -26,7 +25,6 @@
               7.6 0 0 1 3.189 3.048l6.67-3.84a15.881 15.881 0 0 0-6.09-5.688 17.419 17.419 0 0 0-8.409-2.088 17.12 17.12 0 0 0-17.592 
               17.472 17.12 17.12 0 0 0 17.589 17.476 17.519 17.519 0 0 0 8.458-2.088zm17.881-11.928h12.082v-7.3h-12.085v-5.567h13.29v-7.389h-21.022v33.6h21.264v-7.392h-13.532v-5.952z"/>
           </svg>
-        </a>
       </div>
 
       <div class="functional">
@@ -49,11 +47,11 @@
       <nav class="main-navigation">
         <ul class="main-menu">
           <li class="menu-nav">
-            <a class="catalog-link" href="catalog.html">Каталог товаров</a>
+            <a class="catalog-link" href="#">Каталог товаров</a>
             <div class="catalog-background">
             <ul class="sub-menu">
               <li class="catalog-item"><a href="#">Виртуальная реальность</a></li>
-              <li class="catalog-item"><a href="#">Моноподы для селфи</a></li>
+              <li class="catalog-item"><a href="catalog.html">Моноподы для селфи</a></li>
               <li class="catalog-item"><a href="#">Экшн-камеры</a></li>
               <li class="catalog-item"><a href="#">Фитнес-браслеты</a></li>
               <li class="catalog-item"><a href="#">Умные часы</a></li>
@@ -73,6 +71,13 @@
       <h1 class="visually-hidden">Интернет-магазин цифровой техники DEVICE</h1>
 
       <div class="content">
+
+          <input class="slider-input visually-hidden" id="btn-1" type="radio" name="slider-button" checked />
+
+          <input class="slider-input visually-hidden" id="btn-2" type="radio" name="slider-button" />
+
+          <input class="slider-input visually-hidden" id="btn-3" type="radio" name="slider-button" />
+
         <section class="features">
           <h2 class="visually-hidden">Преимущества товаров</h2>
 
@@ -92,10 +97,7 @@
                   <li class="slide" id="slide1">
                     <h3 class="visually-hidden">Самая длинная палка для селфи</h3>
 
-                    <input class="slider-input visually-hidden" id="btn-1" type="radio" name="slider-button" checked />
-
                     <div class="content-list one">
-
                     <div class="slide-image">
                       <img src="img/index/slider-long-stick.png" width="384" height="486" alt="Самая длинная палка для селфи" />
                     </div>
@@ -124,7 +126,7 @@
               <li class="slide" id="slide2">
                 <h3 class="visually-hidden">Умные фитнес-браслеты</h3>
 
-                <input class="slider-input visually-hidden" id="btn-2" type="radio" name="slider-button" />
+             
 
                 <div class="content-list two">
                 
@@ -152,7 +154,7 @@
                   <li class="slide" id="slide3">
                     <h3 class="visually-hidden">Лазерный квадрокоптер</h3>
 
-                    <input class="slider-input visually-hidden" id="btn-3" type="radio" name="slider-button" />
+                    
 
                   <div class="content-list three">
                    
@@ -239,13 +241,18 @@
       </div>
 
       <div class="service-section">
+
+          <input class="services-input visually-hidden" id="btn-delivery" type="radio" name="services-button" checked />
+          <input class="services-input visually-hidden" id="btn-warranty" type="radio" name="services-button" />
+          <input class="services-input visually-hidden" id="btn-credit" type="radio" name="services-button" />
+
           <div class="content">
             <section class="services">
               <h2 class="visually-hidden">Информация о доставке, гарантии и кредите</h2>
 
               <ul class="button-list">
                 <li>
-                  <label class="first-line services-button-active" for="btn-delivery" tabindex="0">Доставка</label>
+                  <label class="button service-button" for="btn-delivery" tabindex="0">Доставка</label>
                 </li>
                 <li>
                   <label class="button service-button" for="btn-warranty" tabindex="0">Гарантия</label>
@@ -256,8 +263,8 @@
               </ul>
 
               <ul class="services-list">
-                <li class="services-list-item delivery-service shown">
-                  <input class="services-input visually-hidden" id="btn-delivery" type="radio" name="services-button" checked />
+                <li class="services-list-item delivery-service" id="service1" >
+                  
                   <div class="service-description">
                     <div class="service-description-case">
                       <h3>Доставка</h3>
@@ -271,8 +278,8 @@
                   </div>
                 </li>
           
-                <li class="services-list-item warranty-service">
-                  <input class="services-input visually-hidden" id="btn-warranty" type="radio" name="services-button" />
+                <li class="services-list-item warranty-service" id="service2">
+                  
                   <div class="service-description">
                     <div class="service-description-case">
                       <h3>Гарантия</h3>
@@ -286,8 +293,8 @@
                   </div>
                 </li>
        
-                <li class="services-list-item credit-service">
-                  <input class="services-input visually-hidden" id="btn-credit" type="radio" name="services-button" />
+                <li class="services-list-item credit-service" id="service3">
+                  
                   <div class="service-description">
                     <div class="service-description-case">
                       <h3>Кредит</h3>
@@ -312,22 +319,22 @@
         <ul class="partners-list">
           <li>
             <a class="dji partner" href="https://www.dji.com/ru/">
-              <img class="partner-image" src="img/index/logo-dji.jpg" width="260" height="100" alt="djl" />
+              <img class="partner-image" src="img/index/logo-dji-gray.jpg" width="260" height="100" alt="djl" />
             </a>
           </li>
           <li>
             <a class="sp-gadgets partner" href="http://www.sp-gadgets.com/">
-              <img class="partner-image" src="img/index/logo-spgadjets.jpg" width="260" height="100" alt="SP gadjets" />
+              <img class="partner-image" src="img/index/logo-spgadjets-gray.jpg" width="260" height="100" alt="SP gadjets" />
             </a>
           </li>
           <li>
             <a class="gopro partner" href="https://gopro.com/ru/ru/">
-              <img class="partner-image" src="img/index/logo-gopro.jpg" width="260" height="100" alt="GoPro" />
+              <img class="partner-image" src="img/index/logo-gopro-gray.jpg" width="260" height="100" alt="GoPro" />
             </a>
           </li>
           <li>
             <a class="vive partner" href="https://www.vive.com/ru/">
-              <img class="partner-image" src="img/index/logo-vive.jpg" width="260" height="100" alt="Vive" />
+              <img class="partner-image" src="img/index/logo-vive-gray.jpg" width="260" height="100" alt="Vive" />
             </a>
           </li>
         </ul>
@@ -380,7 +387,7 @@
   <footer class="footer"> 
     <div class="content">
       <div class="footer-top">
-        <a class="logo footer-logo" href="#">
+        <div class="logo footer-logo">
           <svg xmlns="http://www.w3.org/2000/svg" width="165" height="35" viewBox="0 0 164 35" aria-label="DEVICE logo">
             <path id="footer-logo" d="m0.35 0.7v33.6h13.532a15.723 15.723 0 0 0 11.72-4.824 16.464 16.464 0 0 0 4.712-11.976 16.465 16.465 
               0 0 0-4.712-11.976 15.723 15.723 0 0 0-11.72-4.824zm7.733 26.208v-18.819h5.8a8.648 8.648 0 0 1 6.5 2.568 9.412 
@@ -392,7 +399,7 @@
               7.6 0 0 1 3.189 3.048l6.67-3.84a15.881 15.881 0 0 0-6.09-5.688 17.419 17.419 0 0 0-8.409-2.088 17.12 17.12 0 0 0-17.592 
               17.472 17.12 17.12 0 0 0 17.589 17.476 17.519 17.519 0 0 0 8.458-2.088zm17.881-11.928h12.082v-7.3h-12.085v-5.567h13.29v-7.389h-21.022v33.6h21.264v-7.392h-13.532v-5.952z"/>
             </svg>
-        </a>
+        </div>
         
       <div class="footer-top-right">
         <ul class="footer-authorization footer-enter">
@@ -550,5 +557,8 @@
           </a>
           <button class="modal-close" type="button"><span class="visually-hidden">Закрыть карту</span></button>
         </section>
+
+        <script src="js/script.js"></script>
+
   </body>
 </html>

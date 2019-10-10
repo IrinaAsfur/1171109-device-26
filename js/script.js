@@ -1,10 +1,10 @@
-var linkfeedback = document.querySelector(".feedback"); // кнопка Напишите нам
-var popupfeedback = document.querySelector(".modal-feedback"); // Модалка с формой
-var closefeedbackPopup = popupfeedback.querySelector(".modal-close"); // Кнопка закрытm
+var linkfeedback = document.querySelector(".feedback");
+var popupfeedback = document.querySelector(".modal-feedback");
+var closefeedbackPopup = popupfeedback.querySelector(".modal-close");
 
-var linkMap = document.querySelector(".map"); // кнопка Контакты
-var popupMap = document.querySelector(".modal-map"); // модалка карты
-var closeMapPopup = popupMap.querySelector(".modal-close"); // Кнопка закрытm
+var linkMap = document.querySelector(".map");
+var popupMap = document.querySelector(".modal-map");
+var closeMapPopup = popupMap.querySelector(".modal-close");
 
 var feedbackSubmit = popupfeedback.querySelector(".submit") 
 

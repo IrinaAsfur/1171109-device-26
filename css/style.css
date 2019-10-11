@@ -2806,20 +2806,20 @@ position: relative;
   
     -webkit-animation-name: popup-show;
   
-            animation-name: popup-show;
+            animation-name: popup-show; /*
     -webkit-animation-duration: 0.6s;
             animation-duration: 0.6s;
     -webkit-animation-timing-function: ease;
-            animation-timing-function: ease;
+            animation-timing-function: ease; */
   }
   
   .wrong-input {
     -webkit-animation-name: back_red_color;
-            animation-name: back_red_color;
+            animation-name: back_red_color; /*
     -webkit-animation-duration: 0.6s;
             animation-duration: 0.6s;
     -webkit-animation-timing-function: ease;
-            animation-timing-function: ease;
+            animation-timing-function: ease; */
   }
 
   /*

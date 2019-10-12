@@ -19,7 +19,7 @@ var storage = "";
 
 
 try {
-  storage = localStorage.getItem("feedback");
+  storage = localStorage.getItem("feedback-name");
 } catch (err) {
   isStorageSupport = false;
 }
@@ -49,14 +49,18 @@ feedbackForm.addEventListener("submit", function(evt) {
   if (!feedbackName.value || !feedbackEmail.value  || !feedbackText.value) {
     evt.preventDefault();
     popupfeedback.classList.remove("wrong-input");
+    popupfeedback.offsetWidth = popupfeedback.offsetWidth;
     popupfeedback.classList.add("wrong-input");
+  }else {
+    if (isStorageSupport) {
+      localStorage.setItem("feedback-name", formName.value);
+    }
   }
 });
 
 window.addEventListener("keydown", function(evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
-
     if (popupfeedback.classList.contains("modal-show") || popupMap.classList.contains("modal-show")) {
       popupfeedback.classList.remove("modal-show");
       popupMap.classList.remove("modal-show");

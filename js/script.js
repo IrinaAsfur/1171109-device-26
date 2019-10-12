@@ -13,7 +13,7 @@ var feedbackName = popupfeedback.querySelector(".feedback-name");
 var feedbackEmail = popupfeedback.querySelector(".feedback-email");
 var feedbackText = popupfeedback.querySelector(".feedback-text");
 
-
+ 
 var isStorageSupport = true;
 var storage = "";
 

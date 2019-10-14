@@ -1,22 +1,17 @@
 var linkfeedback = document.querySelector(".feedback");
 var popupfeedback = document.querySelector(".modal-feedback");
 var closefeedbackPopup = popupfeedback.querySelector(".modal-close");
-
 var linkMap = document.querySelector(".map");
 var popupMap = document.querySelector(".modal-map");
 var closeMapPopup = popupMap.querySelector(".modal-close");
-
 var feedbackSubmit = popupfeedback.querySelector(".submit") 
-
 var feedbackForm = popupfeedback.querySelector(".feedback-form")
 var feedbackName = popupfeedback.querySelector(".feedback-name");
 var feedbackEmail = popupfeedback.querySelector(".feedback-email");
 var feedbackText = popupfeedback.querySelector(".feedback-text");
 
- 
 var isStorageSupport = true;
 var storage = "";
-
 
 try {
   storage = localStorage.getItem("feedback-name");

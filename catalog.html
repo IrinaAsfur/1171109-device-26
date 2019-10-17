@@ -137,12 +137,12 @@
                     <div class="bar"></div>
                   </div>
                   <div class="set-price min-price">
-                    <div class="toggle min-toggle" tabindex="0"></div>
-                    <p class="price-view">от 0</p>
+                    <div class="toggle min-toggle" tabindex="0"><span class="visually-hidden">Задать минимальную цену</span></div>
+                    <input class="price-view price-input" type="text" id="amount-min" name="amount-min" placeholder="от 0" /> 
                   </div>
                   <div class="set-price max-price">
-                    <div class="toggle max-toggle" tabindex="0"></div>
-                    <p class="price-view">до 5000</p>
+                    <div class="toggle max-toggle" tabindex="0"><span class="visually-hidden">Задать максимальную цену</span></div>
+                    <input class="price-view price-input" type="text" id="amount-max" name="amount-max" placeholder="до 5000" /> 
                   </div>
                 </div>
               </div>
@@ -163,12 +163,12 @@
                 </li>
                 <li>
                   <input class="visually-hidden filter-input filter-checkbox" type="checkbox" name="color"
-                    id="color-blue" value="blue" />
+                    id="color-blue" value="blue" checked />
                   <label for="color-blue" tabindex="0">Синий</label>
                 </li>
                 <li>
                   <input class="visually-hidden filter-input filter-checkbox" type="checkbox" name="color"
-                    id="color-red" value="red" />
+                    id="color-red" value="red" checked />
                   <label for="color-red" tabindex="0">Красный</label>
                 </li>
                 <li>
@@ -232,7 +232,7 @@
                 <button class="to-compare" id="add-3" type="button">Добавить к сравнению</button>
               </div>
               <div class="stick">
-                <a class="item" href="#">
+                <a class="item item-3" href="#">
                   <h3>Непотопляемая селфи-палка</h3>
                 </a>
                 <p>2 500 руб.</p>
@@ -255,21 +255,16 @@
                 alt="Селфи-палка 'Следуй за мной'" />
             </li>
           </ul>
-          <h2 class="visually-hidden">Навигация по страницам каталога</h2>
-          <ul class="pagination">
-            <li class="page back">
-              <button class="pagination-button pagination-back">
-                <span class="button-text">НАЗАД</span>
-              </button>
-            </li>
-            <li class="page page-current"><a>1</a></li>
-            <li class="page"><a href="#">2</a></li>
-            <li class="page"><a href="#">3</a></li>
-            <li class="page next">
-              <button class="pagination-button pagination-next">
-                <span class="button-text">ВПЕРЕД</span>
-              </button>
-          </ul>
+          <section class="pagination">
+            <h2 class="visually-hidden">Навигация по страницам каталога</h2>
+            <button class="pagination-button back pagination-back" type="button">Назад</button>
+            <ul class="pagination-list">
+              <li class="page page-current"><a>1</a></li>
+              <li class="page"><a href="#">2</a></li>
+              <li class="page"><a href="#">3</a></li>
+            </ul>
+            <button class="pagination-button next pagination-next" type="button">Вперед</button>
+          </section>
         </section>
       </div>
     </div>

@@ -68,22 +68,22 @@
   <main>
     <h1 class="visually-hidden">Интернет-магазин цифровой техники DEVICE</h1>
     <div class="content">
-      <input class="slider-input visually-hidden" id="btn-1" type="radio" name="slider-button" checked />
-      <input class="slider-input visually-hidden" id="btn-2" type="radio" name="slider-button" />
-      <input class="slider-input visually-hidden" id="btn-3" type="radio" name="slider-button" />
+      <input class="slider-input visually-hidden product-1" id="btn-1" type="radio" name="slider-button" checked />
+      <input class="slider-input visually-hidden product-2" id="btn-2" type="radio" name="slider-button" />
+      <input class="slider-input visually-hidden product-3" id="btn-3" type="radio" name="slider-button" />
       <section class="features">
         <h2 class="visually-hidden">Преимущества товаров</h2>
         <div class="slider-controls">
-          <label class="jjj" for="btn-1" tabindex="0"><span class="visually-hidden">Показать первый
+          <label for="btn-1" tabindex="0"><span class="visually-hidden">Показать первый
               слайдер</span></label>
-          <label class="jjj" for="btn-2" tabindex="0"><span class="visually-hidden">Показать второй
+          <label for="btn-2" tabindex="0"><span class="visually-hidden">Показать второй
               слайдер</span></label>
-          <label class="jjj" for="btn-3" tabindex="0"><span class="visually-hidden">Показать третий
+          <label for="btn-3" tabindex="0"><span class="visually-hidden">Показать третий
               слайдер</span></label>
         </div>
         <div class="products-slider">
           <ul class="featured-products">
-            <li class="slide" id="slide1">
+            <li class="slide slide1">
               <h3 class="visually-hidden">Самая длинная палка для селфи</h3>
               <div class="content-list one">
                 <div class="slide-image">
@@ -112,7 +112,7 @@
                 </div>
               </div>
             </li>
-            <li class="slide" id="slide2">
+            <li class="slide slide2">
               <h3 class="visually-hidden">Умные фитнес-браслеты</h3>
               <div class="content-list two">
                 <div class="slide-image">
@@ -135,7 +135,7 @@
                 </div>
               </div>
             </li>
-            <li class="slide" id="slide3">
+            <li class="slide slide3">
               <h3 class="visually-hidden">Лазерный квадрокоптер</h3>
               <div class="content-list three">
                 <div class="slide-image slide-image-quadrocopter">
@@ -225,9 +225,9 @@
       </section>
     </div>
     <div class="service-section">
-      <input class="services-input visually-hidden" id="btn-delivery" type="radio" name="services-button" checked />
-      <input class="services-input visually-hidden" id="btn-warranty" type="radio" name="services-button" />
-      <input class="services-input visually-hidden" id="btn-credit" type="radio" name="services-button" />
+      <input class="services-input visually-hidden delivery-input" id="btn-delivery" type="radio" name="services-button" checked />
+      <input class="services-input visually-hidden warranty-input" id="btn-warranty" type="radio" name="services-button" />
+      <input class="services-input visually-hidden credit-input" id="btn-credit" type="radio" name="services-button" />
       <div class="content">
         <section class="services">
           <h2 class="visually-hidden">Информация о доставке, гарантии и кредите</h2>
@@ -243,7 +243,7 @@
             </li>
           </ul>
           <ul class="services-list">
-            <li class="services-list-item delivery-service" id="service1">
+            <li class="services-list-item delivery-service service1">
               <div class="service-description">
                 <div class="service-description-case">
                   <h3>Доставка</h3>
@@ -258,7 +258,7 @@
                 </div>
               </div>
             </li>
-            <li class="services-list-item warranty-service" id="service2">
+            <li class="services-list-item warranty-service service2">
               <div class="service-description">
                 <div class="service-description-case">
                   <h3>Гарантия</h3>
@@ -273,7 +273,7 @@
                 </div>
               </div>
             </li>
-            <li class="services-list-item credit-service" id="service3">
+            <li class="services-list-item credit-service service3">
               <div class="service-description">
                 <div class="service-description-case">
                   <h3>Кредит</h3>
@@ -500,7 +500,7 @@
         <p>
           <label for="feedback-name">Ваше имя:</label>
           <input class="feedback-name feedback-input feedback-form-input" type="text" name="feedback-name"
-            id="feedback-name" placeholder="Имя Фамилия" />
+            id="feedback-name" pattern="^\D*$" placeholder="Имя Фамилия" />
         </p>
         <p>
           <label for="feedback-email">Ваш e-mail:</label>

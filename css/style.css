@@ -2701,6 +2701,8 @@ p.about-delivery {
     display: -ms-flexbox;
     display: flex;
 
+    margin: 0;
+    margin-top: 15px;
     padding: 0;
     padding-left: 9px;
 

@@ -1240,8 +1240,6 @@ p.about-delivery {
 }
   
 .filters li {
-
-
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 14px;
     font-weight: 300;
@@ -1408,7 +1406,7 @@ p.about-delivery {
 
 .goods:hover::before,
 .goods:focus::before {
-  display: block;
+    display: block;
 }
 
 .mask .to-cart {
@@ -2459,38 +2457,38 @@ p.about-delivery {
 
 .dji:hover::before,
 .dji:focus::before {
-  content: url("../img/index/logo-dji.jpg");
+    content: url("../img/index/logo-dji.jpg");
 
-  position: absolute;
-  top: 0;
-  left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .sp-gadgets:hover::before,
 .sp-gadgets:focus::before {
-  content: url("../img/index/logo-spgadjets.jpg");
+    content: url("../img/index/logo-spgadjets.jpg");
 
-  position: absolute;
-  top: 0;
-  left: 0; 
+    position: absolute;
+    top: 0;
+    left: 0; 
 }
 
 .gopro:hover::before,
 .gopro:focus::before {
-  content: url("../img/index/logo-gopro.jpg");
+    content: url("../img/index/logo-gopro.jpg");
 
-  position: absolute;
-  top: 0;
-  left: 0; 
+    position: absolute;
+    top: 0;
+    left: 0; 
 }
 
 .vive:hover::before,
 .vive:focus::before {
-  content: url("../img/index/logo-vive.jpg");
+    content: url("../img/index/logo-vive.jpg");
 
-  position: absolute;
-  top: 0;
-  left: 0; 
+    position: absolute;
+    top: 0;
+    left: 0; 
 }
 
 .filter-left {  
@@ -2941,4 +2939,3 @@ p.about-delivery {
         -o-transform: translate(-50%, -400px);
 }
     }
-

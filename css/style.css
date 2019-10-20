@@ -1319,6 +1319,10 @@ p.about-delivery {
     opacity: 0.25;
 }
 
+.filter-input:focus + label {
+    outline: 2px solid #95BAED;
+}
+
 .filters-button {
     margin-left: 60px;
     letter-spacing: 4px;
@@ -2654,11 +2658,6 @@ p.about-delivery {
 .sorting-button:hover::before {
     opacity: 0.4;
 }
-
-.sorting-button:focus::before {
-    outline: 2px solid #95BAED;
-    opacity: 0.4;
-}
   
 .sorting-button:active::before {
     opacity: 1;
@@ -2670,6 +2669,11 @@ p.about-delivery {
 
 .filter-graduation:checked + label::before {
     opacity: 1;
+}
+
+.filter-graduation:focus + label::before {
+    outline: 2px solid #95BAED;
+    opacity: 0.4;
 }
 
 .pagination {

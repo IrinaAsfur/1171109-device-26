@@ -6,8 +6,8 @@
   <title>HTML Academy: Девайс - Каталог моноподов</title>
   <meta name="keywords" content="device монопод селфи техника сортировка купить доставка магазин">
   <meta name="description" content="Интернет-магазин DEVICE с лучшими моноподами, большой выбор и приятные цены!">
-  <link rel="stylesheet" href="css/min-style.css" />
   <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/min-style.css" />
 </head>
 
 <body class="catalog-page">
@@ -92,34 +92,25 @@
             <h2 class="sorting-headline">СОРТИРОВКА:</h2>
             <ul class="sorting-list">
               <li>
-                <input class="visually-hidden filter-sorting" type="radio" name="sort" value="by-price" id="sort-price"
-                  checked />
-                <label class="sorting-type sorting-price" for="sort-price" tabindex="0">По цене</label>
+                <a class="filter-sorting sorting-type sorting-price sorting-selected" href="#">По цене</a>
               </li>
               <li>
-                <input class="visually-hidden filter-sorting" type="radio" name="sort" value="by-kind" id="sort-kind" />
-                <label class="sorting-type sorting-kind" for="sort-kind" tabindex="0">По типу</label>
+                <a class="filter-sorting sorting-type sorting-kind" href="#">По типу</a>
               </li>
               <li>
-                <input class="visually-hidden filter-sorting" type="radio" name="sort" value="by-rating"
-                  id="sort-rating" />
-                <label class="sorting-type sorting-rating" for="sort-rating" tabindex="0">По популярности</label>
+                <a class="filter-sorting sorting-type sorting-rating" href="#">По популярности</a>
               </li>
             </ul>
             <ul class="sorting-graduation">
               <li>
-                <input class="visually-hidden filter-graduation" type="radio" name="graduation" value="low-to-high"
-                  id="low-to-high" />
-                <label class="sorting-up sorting-button" for="low-to-high"><span
-                    class="visually-hidden">Сортировка по
-                    возрастанию</span></label>
+                <a class="filter-graduation sorting-up sorting-button" href="#"><span class="visually-hidden">Сортировка
+                    по
+                    возрастанию</span></a>
               </li>
               <li>
-                <input class="visually-hidden filter-graduation" type="radio" name="graduation" value="high-to-low"
-                  id="high-to-low" checked />
-                <label class="sorting-down sorting-button" for="high-to-low"><span
+                <a class="filter-graduation sorting-down sorting-button sorting-selected" href="#"><span
                     class="visually-hidden">Сортировка по
-                    убыванию</span></label>
+                    убыванию</span></a>
               </li>
             </ul>
           </section>
@@ -263,13 +254,13 @@
           </ul>
           <section class="pagination">
             <h2 class="visually-hidden">Навигация по страницам каталога</h2>
-            <button class="pagination-button back pagination-back" type="button">Назад</button>
+            <a class="pagination-button back pagination-back">Назад</a>
             <ul class="pagination-list">
               <li class="page page-current"><a>1</a></li>
               <li class="page"><a href="#">2</a></li>
               <li class="page"><a href="#">3</a></li>
             </ul>
-            <button class="pagination-button next pagination-next" type="button">Вперед</button>
+            <a href="#" class="pagination-button next pagination-next">Вперед</a>
           </section>
         </section>
       </div>

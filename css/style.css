@@ -2313,33 +2313,41 @@ p.about-delivery {
 .service-description-case {
     width: 460px;
 }
-  
-.service-image {
-    width: 180px;
-    padding-top: 12px;
-}
-  
-.service-image .service-icon {
-    display: block;
-    margin: 0 auto;
-}
-  
-.service-image .delivery-icon {
-    margin-left: 36px;
-}
-  
-.service-image .warranty-icon {
+
+.delivery-icon {
     position: relative;
-    top: -24px;
-  
-    margin-left: 22px;
 }
-  
-.service-image .credit-icon {
+
+.delivery-icon::before {
+    content: url("../img/index/delivery.svg");
+
+    position: absolute;
+    top: 12px;
+    left: 556px;
+}
+
+.warranty-icon {
     position: relative;
-    top: -24px;
-  
-    margin-left: 13px;
+}
+
+.warranty-icon::before {
+    content: url("../img/index/warranty.svg");
+
+    position: absolute;
+    top: -13px;
+    left: 542px;
+}
+
+.credit-icon {
+    position: relative;
+}
+
+.credit-icon::before {
+    content: url("../img/index/credit.svg");
+
+    position: absolute;
+    top: -12px;
+    left: 532px;
 }
 
 .service-text {
@@ -2352,7 +2360,7 @@ p.about-delivery {
     letter-spacing: 0.24px;
     color: #464646;
 }
-  
+
 .service-description h3 {
     margin: 0;
     margin-bottom: 31px;
@@ -2378,13 +2386,13 @@ p.about-delivery {
   
     background-image: linear-gradient(to bottom, transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%);
 }
-  
+
 .service-button:active {
     color: #f7e184;
   
     background-color: #000000;
 }
-  
+
 .service-button:active::before {
     content: "";
 
@@ -2658,22 +2666,22 @@ p.about-delivery {
 .sorting-button:hover::before {
     opacity: 0.4;
 }
-  
-.sorting-button:active::before {
-    opacity: 1;
-}
 
-.filter-sorting:checked + label {
-    opacity: 1;
-}
-
-.filter-graduation:checked + label::before {
-    opacity: 1;
-}
-
-.filter-graduation:focus + label::before {
+.filter-graduation:focus::before {
     outline: 2px solid #95BAED;
     opacity: 0.4;
+} 
+
+.sorting-type.sorting-selected {
+    opacity: 1;
+}
+
+.sorting-button.sorting-selected::before {
+    opacity: 1;
+}
+
+.sorting-button:active::before {
+  opacity: 1;
 }
 
 .pagination {
@@ -2705,7 +2713,6 @@ p.about-delivery {
 
     margin: 0;
     padding: 0;
-    padding-left: 9px;
 
     list-style: none;
 
@@ -2753,10 +2760,9 @@ p.about-delivery {
 
     margin: 0;
     padding: 0;
-    padding-top: 2px;
-    padding-right: 26px;
-    padding-left: 27px;
-
+    padding-top: 23px;
+    padding-left: 29px;
+    
     letter-spacing: 3.4px;
     text-transform: uppercase;
 
@@ -2782,19 +2788,15 @@ p.about-delivery {
     width: 130px;
     margin-right: auto;
 }
-  
-.pagination-back {
-    width: 130px;
-}
+ 
   
 .next {
-    width: 132px;
+    width: 104px;
     margin-left: auto;
+    padding-left: 55px;
 }
   
-.pagination-next {
-    width: 132px;
-}
+
 
 .bottom-align {
     -ms-flex-item-align: end;

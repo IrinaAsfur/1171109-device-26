@@ -2713,6 +2713,7 @@ p.about-delivery {
 
     margin: 0;
     padding: 0;
+    padding-left: 8px;
 
     list-style: none;
 
@@ -2769,34 +2770,30 @@ p.about-delivery {
     color: #000000;
     border: none;
     background-color: transparent;
-
-    cursor: pointer;
 }
 
-.pagination-button:hover,
-.pagination-button:focus {
+.pagination-next:hover,
+.pagination-next:focus {
     background-color: #d9d9d9;
 }
 
-.pagination-button:active {
+.pagination-next:active {
     opacity: 0.3;
     color: rgba(0, 0, 0, 0.3);
     background-color: #d9d9d9;
 }
 
 .back {
-    width: 130px;
+    width: 101px;
     margin-right: auto;
 }
- 
-  
+
 .next {
     width: 104px;
     margin-left: auto;
-    padding-left: 55px;
-}
-  
 
+    cursor: pointer;
+}
 
 .bottom-align {
     -ms-flex-item-align: end;

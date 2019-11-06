@@ -2667,22 +2667,18 @@ p.about-delivery {
     opacity: 0.4;
 }
 
-.filter-graduation:focus::before {
+.filter-sorting:checked + label {
+    opacity: 1;
+}
+
+.filter-graduation:checked + label::before {
+    opacity: 1;
+}
+
+.filter-graduation:focus + label::before {
     outline: 2px solid #95BAED;
     opacity: 0.4;
 } 
-
-.sorting-type.sorting-selected {
-    opacity: 1;
-}
-
-.sorting-button.sorting-selected::before {
-    opacity: 1;
-}
-
-.sorting-button:active::before {
-  opacity: 1;
-}
 
 .pagination {
     position: relative;

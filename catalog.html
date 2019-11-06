@@ -92,25 +92,32 @@
             <h2 class="sorting-headline">СОРТИРОВКА:</h2>
             <ul class="sorting-list">
               <li>
-                <a class="filter-sorting sorting-type sorting-price sorting-selected" href="#">По цене</a>
+                <input class="visually-hidden filter-sorting" type="radio" name="sort" value="by-price" id="sort-price"
+                  checked />
+                <label class="sorting-type sorting-price" for="sort-price" tabindex="0">По цене</label>
               </li>
               <li>
-                <a class="filter-sorting sorting-type sorting-kind" href="#">По типу</a>
+                <input class="visually-hidden filter-sorting" type="radio" name="sort" value="by-kind" id="sort-kind" />
+                <label class="sorting-type sorting-kind" for="sort-kind" tabindex="0">По типу</label>
               </li>
               <li>
-                <a class="filter-sorting sorting-type sorting-rating" href="#">По популярности</a>
+                <input class="visually-hidden filter-sorting" type="radio" name="sort" value="by-rating"
+                  id="sort-rating" />
+                <label class="sorting-type sorting-rating" for="sort-rating" tabindex="0">По популярности</label>
               </li>
             </ul>
             <ul class="sorting-graduation">
               <li>
-                <a class="filter-graduation sorting-up sorting-button" href="#"><span class="visually-hidden">Сортировка
-                    по
-                    возрастанию</span></a>
+                <input class="visually-hidden filter-graduation" type="radio" name="graduation" value="low-to-high"
+                  id="low-to-high" />
+                <label class="sorting-up sorting-button" for="low-to-high"><span class="visually-hidden">Сортировка по
+                    возрастанию</span></label>
               </li>
               <li>
-                <a class="filter-graduation sorting-down sorting-button sorting-selected" href="#"><span
-                    class="visually-hidden">Сортировка по
-                    убыванию</span></a>
+                <input class="visually-hidden filter-graduation" type="radio" name="graduation" value="high-to-low"
+                  id="high-to-low" checked />
+                <label class="sorting-down sorting-button" for="high-to-low"><span class="visually-hidden">Сортировка по
+                    убыванию</span></label>
               </li>
             </ul>
           </section>
